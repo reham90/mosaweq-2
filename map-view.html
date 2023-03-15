@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>المسوق الإفتراضي / البحث بالخريطة</title>
+      <link rel="icon" href="images/fav.png" type="image/png" />
+      <link rel="stylesheet" href="css/all.min.css" />
+      <link rel="stylesheet" href="css/line-awesome.min.css" />
+      <link rel="stylesheet" href="css/fontawesome.min.css" />
+      <link rel="stylesheet" href="css/solid.css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+      <link rel="stylesheet" href="css/fonts.css" />
+      <link rel="stylesheet" href="css/animate.css" />
+      <link rel="stylesheet" href="css/swiper.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body class="map-view-body">
+      <!-- preloader -->
+      <div class="preloader">
+         <div class="progress">
+            <div class="progress-bar"></div>
+         </div>
+      </div>
+      <!-- preloader -->
+      <!-- header section -->
+      <header class="fixed-top view-map-head">
+         <div class="search-bar ">
+            <figure class="img-logo">
+               <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="logo" /></a>
+            </figure>
+            <div class="search-select-part">
+               <div class="search-section" id="search-icon">
+                  <div class="select-wrapper">
+                     <select>
+                        <option>اختر نوع العقار</option>
+                        <option>اختر نوع العقار</option>
+                        <option>اختر نوع العقار</option>
+                        <option>اختر نوع العقار</option>
+                     </select>
+                  </div>
+                  <div class="select-wrapper">
+                     <select>
+                        <option>اختر المدينة</option>
+                        <option>اختر المدينة</option>
+                        <option>اختر المدينة</option>
+                        <option>اختر المدينة</option>
+                     </select>
+                  </div>
+                  <button class="search-button " >
+                  <i class="las la-search"></i>
+                  بحث
+                  </button>
+               </div>
+            </div>
+            <div class="lang-part mobile-lang-part">
+               <div class="lang-section">
+                  <div class="lang-word ">
+                     <a href="index-en.html" class="language-anchor">English</a>
+                  </div>
+               </div>
+               <a href="#" class="sign dropbtn m0">
+               <i class="las la-bell"></i>
+               <span class="notification"></span>
+               </a>
+               <div class="dropdown">
+                  <button class="dropbtn">
+                  <i class="las la-user icon"></i>
+                  <span>حسابي <i class="las la-angle-down arrow-down-dropdown"></i> </span>
+                  </button>
+                  <div class="dropdown-content">
+                     <a href="my-account.html">حسابي</a>
+                     <a href="#">تسجيل خروج</a>
+                  </div>
+               </div>
+               <a href="add-adv-1.html" class="link-adv-btn add-adv-btn">
+               <i class="las la-plus"></i> إضافة إعلان
+               </a>
+            </div>
+         </div>
+         <div class="nav-header map-view-header">
+            <div class="navgition">
+               <ul class="big-menu list-unstyled">
+                  <li class="search-by-map">
+                     <i class="las la-map"></i> 
+                     <a href="map-view.html">بحث بالخريطة</a>
+                  </li>
+                  <li class="active">
+                     <a href="index.html"> الكل</a>
+                  </li>
+                  <li>
+                     <a href="#"> شقق للإيجار</a>
+                  </li>
+                  <li>
+                     <a href="#"> أراضي للبيع</a>
+                  </li>
+                  <li>
+                     <a href="#"> فلل للبيع</a>
+                  </li>
+                  <li>
+                     <a href="#"> دور للإيجار</a>
+                  </li>
+                  <li>
+                     <a href="#"> فلل للإيجار</a>
+                  </li>
+                  <li>
+                     <a href="#"> شقق للبيع</a>
+                  </li>
+                  <li>
+                     <a href="#"> عمائر للبيع</a>
+                  </li>
+                  <li>
+                     <a href="#"> محلات للإيجار</a>
+                  </li>
+                  <li>
+                     <a href="#"> بيت للبيع</a>
+                  </li>
+                  <li>
+                     <a href="#"> استراحة للبيع</a>
+                  </li>
+                  <li>
+                     <a href="#"> بيت للإيجار</a>
+                  </li>
+                  <li>
+                     <a href="#"> مزرعة للبيع</a>
+                  </li>
+                  <li>
+                     <a href="#"> مزرعة للبيع</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="overlay-box">
+            <button class="add-to fixed-search">
+            <span class="open-search"></span>
+            </button>
+         </div>
+      </header>
+      <!-- header section     -->
+      <!--content-section -->
+      <div class="view-map-section">
+         <div class="container map-view-buttons-block">
+            <div class="adv-buttons">
+               <div class="adv-btn btn-1">
+                  <button onclick="showAdv(1)">1.3 مليون</button>
+               </div>
+               <div class="adv-btn btn-2">
+                  <button onclick="showAdv(2)">1.3 مليون</button>
+               </div>
+               <div class="adv-btn btn-3">
+                  <button onclick="showAdv(3)">1.3 مليون</button>
+               </div>
+               <div class="adv-btn btn-4">
+                  <button onclick="showAdv(4)">1.3 مليون</button>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="content-section-div map-view-cont hide" id="1" >
+               <div class="home-block">
+                  <button class="fav-btn"><i class="lar la-heart"></i></button>
+                  <a href="#">
+                     <div class="pro-img">
+                        <figure>
+                           <img src="images/buildings/04.jpg" alt="building">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="home-details">
+                     <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
+                     <ul class="home-discription">
+                        <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
+                        <li><i class="las la-bed"></i>5</li>
+                        <li><i class="las la-couch"></i>2</li>
+                        <li><i class="las la-bath"></i>5</li>
+                     </ul>
+                     <p>1,250,000 ريال</p>
+                     <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
+                  </div>
+               </div>
+            </div>
+            <div class="content-section-div map-view-cont hide" id="2" >
+               <div class="home-block">
+                  <button class="fav-btn"><i class="lar la-heart"></i></button>
+                  <a href="#">
+                     <div class="pro-img">
+                        <figure>
+                           <img src="images/buildings/03.jpg" alt="building">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="home-details">
+                     <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
+                     <ul class="home-discription">
+                        <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
+                        <li><i class="las la-bed"></i>5</li>
+                        <li><i class="las la-couch"></i>2</li>
+                        <li><i class="las la-bath"></i>5</li>
+                     </ul>
+                     <p>1,250,000 ريال</p>
+                     <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
+                  </div>
+               </div>
+            </div>
+            <div class="content-section-div map-view-cont hide" id="3" >
+               <div class="home-block">
+                  <button class="fav-btn"><i class="lar la-heart"></i></button>
+                  <a href="#">
+                     <div class="pro-img">
+                        <figure>
+                           <img src="images/buildings/05.jpg" alt="building">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="home-details">
+                     <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
+                     <ul class="home-discription">
+                        <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
+                        <li><i class="las la-bed"></i>5</li>
+                        <li><i class="las la-couch"></i>2</li>
+                        <li><i class="las la-bath"></i>5</li>
+                     </ul>
+                     <p>1,250,000 ريال</p>
+                     <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
+                  </div>
+               </div>
+            </div>
+            <div class="content-section-div map-view-cont hide" id="4" >
+               <div class="home-block">
+                  <button class="fav-btn"><i class="lar la-heart"></i></button>
+                  <a href="#">
+                     <div class="pro-img">
+                        <figure>
+                           <img src="images/buildings/02.jpg" alt="building">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="home-details">
+                     <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
+                     <ul class="home-discription">
+                        <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
+                        <li><i class="las la-bed"></i>5</li>
+                        <li><i class="las la-couch"></i>2</li>
+                        <li><i class="las la-bath"></i>5</li>
+                     </ul>
+                     <p>1,250,000 ريال</p>
+                     <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
+                  </div>
+               </div>
+            </div>
+            <span class="map-note">49 من 134395 إعلان, قرب أكثر لجميع الإعلانات</span>
+         </div>
+      </div>
+      <!-- content-section -->
+      <!-- footer section -->
+      <footer>
+         <div class="container">
+            <div class="footer-cont">
+               <div class="row">
+                  <div class="col-md-4  col-xs-12">
+                     <a href="index.html">
+                        <figure>
+                           <img src="images/logo.png" alt="logo">
+                        </figure>
+                     </a>
+                     <p>
+                        هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص
+                     </p>
+                     <ul class="footer-social">
+                        <li><a href="#"><i class="lab la-telegram"></i></a></li>
+                        <li><a href="#"><i class="lab la-instagram"></i></a></li>
+                        <li><a href="#"><i class="lab la-youtube"></i></a></li>
+                        <li><a href="#"><i class="lab la-twitter"></i></a></li>
+                        <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+                     </ul>
+                     <ul class="play-store">
+                        <li><a href="#"><img src="images/footer/01.jpg" alt="play store"></a></li>
+                        <li><a href="#"><img src="images/footer/02.jpg" alt="apple store"></a></li>
+                     </ul>
+                  </div>
+                  <div class=" col-md-2    col-xs-12">
+                     <div class="nav-foot-cont">
+                        <h2 class="nav-foot-header nav-accordion">روابط سريعة</h2>
+                        <ul class="nav-foot nav-wrap list-unstyled">
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">توثيق عقود الإيجار </a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">تأكيد التحويلات البنكية</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">من نحن</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="terms-and-conditions.html" class="nav-foot-link">الشروط والأحكام</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">الأسئلة الشائعة</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">اتصل بنا</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-6   special-footer-nav  col-xs-12">
+                     <div class="nav-foot-cont">
+                        <h2 class="nav-foot-header nav-accordion">الأقسام الرئيسية</h2>
+                        <ul class="nav-foot nav-wrap list-unstyled">
+                           <li class="nav-foot-li">
+                              <a href="about.html" class="nav-foot-link">شقق للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="services.html" class="nav-foot-link">أراضي للبيع</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="work.html" class="nav-foot-link">فلل للبيع</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="clients.html" class="nav-foot-link">دور للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="partners-work.html" class="nav-foot-link">فلل للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="careers.html" class="nav-foot-link">شقق للبيع</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">غرف للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">عمائر للبيع</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">محلات للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">بيت للبيع</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">إستراحة للبيع</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">بيت للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">مزرعة للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">محلات للبيع</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">إستراحة للبيع</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">مكتب تجاري للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">أراضي للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">عمائر للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">مستودع للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">مخيم للإيجار</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">شاليه للإيجار</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copy-flex">
+               <div class="copy-right">
+                  © المسوق الإفتراضي 2023
+               </div>
+               <ul class="certificates">
+                  <li><img src="images/footer/03.jpg" alt="certificate"></li>
+                  <li><img src="images/footer/04.png" alt="certificate"></li>
+               </ul>
+               <div class="copy-right">
+                  تصميم وتطوير 
+                  <figure>
+                     <a href="#">
+                     <img src="images/footer/tasawok-en.png" alt="logo">
+                     </a>
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer section -->
+      <!-- mobile show icons -->
+      <div class="mobile-show-icons fixed-bottom">
+         <div class="container">
+            <ul class="mobile-icons mobile-icons-2">
+               <li>
+                  <a href="add-adv-1.html" class="link-adv-btn add-adv-btn">
+                  <i class="las la-plus"></i> إضافة إعلان
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="sign dropbtn m0">
+                     <i class="las la-bell"></i>
+                     <span class="notification"></span>
+                     <p>الإشعارات</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="my-account.html" class="sign dropbtn">
+                  <i class="las la-user icon"></i>
+                  <span>حسابي</span>
+                  </a>
+               </li>
+               <li>
+                  <div class="show-icons">
+                     <button
+                        class="add-to fixed-search"
+                        >
+                     <span class="open-search">
+                     </span>
+                     <span class="search-span">البحث</span>
+                     </button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- mobile-show-icons -->
+      <!-- arrow to top -->
+      <a class="arrow-top">
+      <i class="las la-long-arrow-alt-up"></i>
+      </a>
+      <!-- arrow to top -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/swiper.min.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>

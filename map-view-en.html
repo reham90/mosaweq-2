@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>the virtual marketer/ map view </title>
+      <link rel="icon" href="images/fav.png" type="image/png" />
+      <link rel="stylesheet" href="css/all.min.css" />
+      <link rel="stylesheet" href="css/line-awesome.min.css" />
+      <link rel="stylesheet" href="css/fontawesome.min.css" />
+      <link rel="stylesheet" href="css/solid.css" />
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <link rel="stylesheet" href="css/fonts.css" />
+      <link rel="stylesheet" href="css/animate.css" />
+      <link rel="stylesheet" href="css/swiper.min.css" />
+      <link rel="stylesheet" href="css/style.css" />
+   </head>
+   <body class="map-view-body">
+      <!-- preloader -->
+      <div class="preloader">
+         <div class="progress">
+            <div class="progress-bar"></div>
+         </div>
+      </div>
+      <!-- preloader -->
+      <!-- header section -->
+      <header class="fixed-top view-map-head">
+         <div class="search-bar ">
+            <figure class="img-logo">
+               <a href="#"><img src="images/logo.png" class="img-fluid" alt="logo" /></a>
+            </figure>
+            <div class="search-select-part">
+               <div class="search-section" id="search-icon">
+                  <div class="select-wrapper">
+                     <select>
+                        <option>choose real state type</option>
+                        <option>choose real state type</option>
+                        <option>choose real state type</option>
+                        <option>choose real state type</option>
+                     </select>
+                  </div>
+                  <div class="select-wrapper">
+                     <select>
+                        <option>choose city</option>
+                        <option>choose city</option>
+                        <option>choose city</option>
+                        <option>choose city</option>
+                     </select>
+                  </div>
+                  <button class="search-button " >
+                  <i class="las la-search"></i>
+                  search
+                  </button>
+               </div>
+            </div>
+            <div class="lang-part mobile-lang-part">
+               <div class="lang-section">
+                  <div class="dropdown">
+                     <div class="lang-word ">
+                        <a href="index.html" class="language-anchor">العربية</a>
+                     </div>
+                  </div>
+               </div>
+               <a href="#" class="sign dropbtn m0">
+               <i class="las la-bell"></i>
+               <span class="notification"></span>
+               </a>
+               <div class="dropdown">
+                  <button class="dropbtn">
+                  <i class="las la-user icon"></i>
+                  <span>my account<i class="las la-angle-down arrow-down-dropdown"></i> </span>
+                  </button>
+                  <div class="dropdown-content">
+                     <a href="#">my account</a>
+                     <a href="#">log out</a>
+                  </div>
+               </div>
+               <a href="add-adv-1-en.html" class="link-adv-btn add-adv-btn">
+               <i class="las la-plus"></i> add adv
+               </a>
+            </div>
+         </div>
+         <div class="nav-header map-view-header">
+            <div class="navgition">
+               <ul class="big-menu list-unstyled">
+                  <li class="search-by-map">
+                     <i class="las la-map"></i> 
+                     <a href="map-view-en.html">search by map</a>
+                  </li>
+                  <li class="active">
+                     <a href="index.html">all</a>
+                  </li>
+                  <li>
+                     <a href="#"> apartments for rent</a>
+                  </li>
+                  <li>
+                     <a href="#"> lands for sell</a>
+                  </li>
+                  <li>
+                     <a href="#"> villas for sell</a>
+                  </li>
+                  <li>
+                     <a href="#"> floor for rent</a>
+                  </li>
+                  <li>
+                     <a href="#"> villas for rent</a>
+                  </li>
+                  <li>
+                     <a href="#"> apartments for sell</a>
+                  </li>
+                  <li>
+                     <a href="#"> buildings for sell</a>
+                  </li>
+                  <li>
+                     <a href="#"> stores for rent</a>
+                  </li>
+                  <li>
+                     <a href="#"> house for sell</a>
+                  </li>
+                  <li>
+                     <a href="#"> rest for sell</a>
+                  </li>
+                  <li>
+                     <a href="#">house for rent</a>
+                  </li>
+                  <li>
+                     <a href="#"> farm for sell</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="overlay-box">
+            <button class="add-to fixed-search">
+            <span class="open-search"></span>
+            </button>
+         </div>
+      </header>
+      <!-- header section     -->
+      <!--content-section -->
+      <div class="view-map-section">
+         <div class="container map-view-buttons-block">
+            <div class="adv-buttons">
+               <div class="adv-btn btn-1">
+                  <button onclick="showAdv(1)">1.3 million</button>
+               </div>
+               <div class="adv-btn btn-2">
+                  <button onclick="showAdv(2)">1.3 million</button>
+               </div>
+               <div class="adv-btn btn-3">
+                  <button onclick="showAdv(3)">1.3 million</button>
+               </div>
+               <div class="adv-btn btn-4">
+                  <button onclick="showAdv(4)">1.3 million</button>
+               </div>
+            </div>
+         </div>
+         <div class="container">
+            <div class="content-section-div map-view-cont hide" id="1" >
+               <div class="home-block">
+                  <button class="fav-btn"><i class="lar la-heart"></i></button>
+                  <a href="#">
+                     <div class="pro-img">
+                        <figure>
+                           <img src="images/buildings/04.jpg" alt="building">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="home-details">
+                     <a href="post-en.html">Villa for sale in Mahoub Al Jawaliqi Street</a>
+                     <ul class="home-discription">
+                        <li><i class="las la-ruler-combined"></i>200 m<sup>2</sup></li>
+                        <li><i class="las la-bed"></i>5</li>
+                        <li><i class="las la-couch"></i>2</li>
+                        <li><i class="las la-bath"></i>5</li>
+                     </ul>
+                     <p>1,250,000 R.S</p>
+                     <span>Al-Naseem Al-Sharqi District, Riyadh, Riyadh - 4 days ago</span>
+                  </div>
+               </div>
+            </div>
+            <div class="content-section-div map-view-cont hide" id="2" >
+               <div class="home-block">
+                  <button class="fav-btn"><i class="lar la-heart"></i></button>
+                  <a href="#">
+                     <div class="pro-img">
+                        <figure>
+                           <img src="images/buildings/03.jpg" alt="building">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="home-details">
+                     <a href="post-en.html">Villa for sale in Mahoub Al Jawaliqi Street</a>
+                     <ul class="home-discription">
+                        <li><i class="las la-ruler-combined"></i>200 m<sup>2</sup></li>
+                        <li><i class="las la-bed"></i>5</li>
+                        <li><i class="las la-couch"></i>2</li>
+                        <li><i class="las la-bath"></i>5</li>
+                     </ul>
+                     <p>1,250,000 R.S</p>
+                     <span>Al-Naseem Al-Sharqi District, Riyadh, Riyadh - 4 days ago</span>
+                  </div>
+               </div>
+            </div>
+            <div class="content-section-div map-view-cont hide" id="3" >
+               <div class="home-block">
+                  <button class="fav-btn"><i class="lar la-heart"></i></button>
+                  <a href="#">
+                     <div class="pro-img">
+                        <figure>
+                           <img src="images/buildings/05.jpg" alt="building">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="home-details">
+                     <a href="post-en.html">Villa for sale in Mahoub Al Jawaliqi Street</a>
+                     <ul class="home-discription">
+                        <li><i class="las la-ruler-combined"></i>200 m<sup>2</sup></li>
+                        <li><i class="las la-bed"></i>5</li>
+                        <li><i class="las la-couch"></i>2</li>
+                        <li><i class="las la-bath"></i>5</li>
+                     </ul>
+                     <p>1,250,000 R.S</p>
+                     <span>Al-Naseem Al-Sharqi District, Riyadh, Riyadh - 4 days ago</span>
+                  </div>
+               </div>
+            </div>
+            <div class="content-section-div map-view-cont hide" id="4" >
+               <div class="home-block">
+                  <button class="fav-btn"><i class="lar la-heart"></i></button>
+                  <a href="#">
+                     <div class="pro-img">
+                        <figure>
+                           <img src="images/buildings/02.jpg" alt="building">
+                        </figure>
+                     </div>
+                  </a>
+                  <div class="home-details">
+                     <a href="post-en.html">Villa for sale in Mahoub Al Jawaliqi Street</a>
+                     <ul class="home-discription">
+                        <li><i class="las la-ruler-combined"></i>200 m<sup>2</sup></li>
+                        <li><i class="las la-bed"></i>5</li>
+                        <li><i class="las la-couch"></i>2</li>
+                        <li><i class="las la-bath"></i>5</li>
+                     </ul>
+                     <p>1,250,000 R.S</p>
+                     <span>Al-Naseem Al-Sharqi District, Riyadh, Riyadh - 4 days ago</span>
+                  </div>
+               </div>
+            </div>
+            <span class="map-note">49 of 134,395 ads, close up to all ads</span>
+         </div>
+      </div>
+      <!-- content-section -->
+      <!-- footer section -->
+      <footer>
+         <div class="container">
+            <div class="footer-cont">
+               <div class="row">
+                  <div class="col-md-4 col-sm-12 col-xs-12">
+                     <a href="#">
+                        <figure>
+                           <img src="images/logo.png" alt="logo">
+                        </figure>
+                     </a>
+                     <p>
+                        There are many variants of Lorem Ipsum texts available, but the majority have been modified in some way by introducing some anecdotes or random words into the text.              
+                     </p>
+                     <ul class="footer-social">
+                        <li><a href="#"><i class="lab la-telegram"></i></a></li>
+                        <li><a href="#"><i class="lab la-instagram"></i></a></li>
+                        <li><a href="#"><i class="lab la-youtube"></i></a></li>
+                        <li><a href="#"><i class="lab la-twitter"></i></a></li>
+                        <li><a href="#"><i class="lab la-facebook-f"></i></a></li>
+                     </ul>
+                     <ul class="play-store">
+                        <li><a href="#"><img src="images/footer/01.jpg" alt="play store"></a></li>
+                        <li><a href="#"><img src="images/footer/02.jpg" alt="apple store"></a></li>
+                     </ul>
+                  </div>
+                  <div class="col-md-2   col-xs-12">
+                     <div class="nav-foot-cont">
+                        <h2 class="nav-foot-header nav-accordion">quick links</h2>
+                        <ul class="nav-foot nav-wrap list-unstyled">
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">Documentation of lease contracts</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">Confirmation of bank transfers</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">about us</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="terms-and-conditions-en.html" class="nav-foot-link">terms & conditions</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">faq</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="#" class="nav-foot-link">contact us</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-6 special-footer-nav col-xs-12">
+                     <div class="nav-foot-cont">
+                        <h2 class="nav-foot-header nav-accordion">main departments</h2>
+                        <ul class="nav-foot nav-wrap list-unstyled">
+                           <li class="nav-foot-li">
+                              <a href="about.html" class="nav-foot-link">apartments for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="services.html" class="nav-foot-link">lands for sell</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="work.html" class="nav-foot-link">villas for sell</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="clients.html" class="nav-foot-link">floor for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="partners-work.html" class="nav-foot-link">villas for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="careers.html" class="nav-foot-link">apartments for sell</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">rooms for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">buildings for sell</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">stores for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">house for sell</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">rest for sell</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">house for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">farm for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">stores for sell</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">rest for sell</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">commercial office for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">lands for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">buildings for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">store house for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">camp for rent</a>
+                           </li>
+                           <li class="nav-foot-li">
+                              <a href="contact.html" class="nav-foot-link">chalet for rent</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="copy-flex">
+               <div class="copy-right">
+                  © the virtual marketer 2023
+               </div>
+               <ul class="certificates">
+                  <li><img src="images/footer/03.jpg" alt="certificate"></li>
+                  <li><img src="images/footer/04.png" alt="certificate"></li>
+               </ul>
+               <div class="copy-right">
+                  design and development by
+                  <figure>
+                     <a href="#">
+                     <img src="images/footer/tasawk-en.png" alt="logo">
+                     </a>
+                  </figure>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer section -->
+      <!-- mobile show icons -->
+      <div class="mobile-show-icons fixed-bottom">
+         <div class="container">
+            <ul class="mobile-icons mobile-icons-2">
+               <li>
+                  <a href="add-adv-1-en.html" class="link-adv-btn add-adv-btn">
+                  <i class="las la-plus"></i> add adv
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="sign dropbtn m0">
+                     <i class="las la-bell"></i>
+                     <span class="notification"></span>
+                     <p>notifications</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="sign-in-en.html" class="sign dropbtn">
+                  <i class="las la-user icon"></i>
+                  <span>my account</span>
+                  </a>
+               </li>
+               <li>
+                  <div class="show-icons">
+                     <button
+                        class="add-to fixed-search"
+                        >
+                     <span class="open-search">
+                     </span>
+                     <span class="search-span">search</span>
+                     </button>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </div>
+      <!-- mobile-show-icons -->
+      <!-- arrow to top -->
+      <a class="arrow-top">
+      <i class="las la-long-arrow-alt-up"></i>
+      </a>
+      <!-- arrow to top -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/swiper.min.js"></script>
+      <script src="js/script.js"></script>
+   </body>
+</html>
