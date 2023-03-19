@@ -146,53 +146,53 @@
                <h2 class="form-title">
                   register
                </h2>
-               <form>
+               <div>
                   <label class="form-label extra-label-margin-2">membership type</label>
                   <div class="checkbox-section mb15">
                      <div class="radio-button-block first-checkbox-block">
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="owner" name="type" value="owner" checked>
                            <label for="owner"> owner</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="searcher"  name="type" value="researcher for a building">
                            <label for="searcher"> researcher for a building</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="semsar"  name="type" value="real state broker">
                            <label for="semsar"> real state broker</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="company"  name="type" value="real state development company">
                            <label for="company"> real state development company</label>
                         </div>
                      </div>
                      <div class="radio-button-block second-checkbox-block">
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="wakeel"  name="type" value="agent or delegate">
                            <label for="wakeel"> agent or delegate</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="sales"  name="type" value="real estate marketer">
                            <label for="sales"> real estate marketer</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="office"  name="type" value="real state office">
                            <label for="office"> real state office</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="rate"  name="type" value="real state rating company">
                            <label for="rate"> real state rating company</label>
                         </div>
                      </div>
                   </div>
                   <label class="form-label">username<span class="label-span">"english only" </span></label>
-                  <input type="text">
+                  <input type="text" id="user">
                   <label class="form-label">full name</label>
                   <input type="text">
                   <label class="form-label">mobile number</label>
                   <div class="map-input">
-                     <input type="text" class="price-input"  placeholder="5xxxxxxxx">
+                     <input  id="intTextBox" class="price-input"  placeholder="5xxxxxxxx">
                      <span class="country">
                      +966
                      <img src="images/flag-ar.png" alt="flag">
@@ -220,16 +220,18 @@
                   </div>
                   <label class="form-label">password</label>
                   <div class="map-input">
-                     <input type="password" class="my-input">
-                     <button>
-                     <i class="las la-eye"></i>
+                     <input type="password" class="my-input" id="pass1">
+                     <button onclick=togglePassword()>
+                        <i class="las la-eye-slash" id="eye-slash"></i>
+                        <i class="las la-eye" id="eye"></i>
                      </button>
                   </div>
                   <label class="form-label">confirm password</label>
                   <div class="map-input">
-                     <input type="password" class="my-input">
-                     <button>
-                     <i class="las la-eye"></i>
+                     <input type="password" class="my-input" id="pass2">
+                     <button onclick=togglePassword2()>
+                        <i class="las la-eye-slash" id="eye-slash-2"></i>
+                        <i class="las la-eye" id="eye-2"></i>
                      </button>
                   </div>
                   <label class="form-label">personal brief</label>
@@ -239,7 +241,7 @@
                      <label for="accept" class="accept"> I have read and agree to <a href="add-adv-1-en.html">terms & conditions</a></label>
                   </div>
                   <button type="submit" class="submit-adv">register</button>
-               </form>
+               </div>
             </div>
          </div>
       </div>

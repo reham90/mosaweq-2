@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>توثيق عقود الإيجار</title>
+      <title>المسوق الإفتراضي / حسابي</title>
       <link rel="icon" href="images/fav.png" type="image/png" />
       <link rel="stylesheet" href="css/all.min.css" />
       <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -61,10 +61,29 @@
                      <a href="index-en.html" class="language-anchor">English</a>
                   </div>
                </div>
-               <a href="sign-in.html" class="sign dropbtn">
-               <i class="las la-user icon"></i>
-               <span>تسجيل دخول</span>
+               <a href="#" class="sign dropbtn m0">
+               <i class="las la-bell"></i>
+               <span class="notification"></span>
                </a>
+               <div class="dropdown">
+                  <button class="dropbtn">
+                  <i class="las la-user icon"></i>
+                  <span>حسابي <i class="las la-angle-down arrow-down-dropdown"></i> </span>
+                  </button>
+                  <div class="dropdown-content">
+                     <a href="edit-account.html">تعديل بيانات الحساب</a>
+                     <a href="edit-password.html">تعديل بيانات المرور</a>
+                     <a href="my-adv.html">إعلاناتي</a>
+                     <a href="favourite.html">المفضلة</a>
+                     <a href="notifications.html">الإشعارات</a>
+                     <a href="chat.html">المحادثات</a>
+                     <a href="bank-transfer.html">التحويلات البنكية</a>
+                     <a href="request-contracts.html">طلبات توثيق العقود</a>
+                     <a href="reports.html">البلاغات</a>
+                     <a href="#">تسجيل خروج</a>
+                     <a href="#">حذف الحساب</a>
+                  </div>
+               </div>
                <a href="add-adv-1.html" class="link-adv-btn add-adv-btn">
                <i class="las la-plus"></i> إضافة إعلان
                </a>
@@ -138,50 +157,120 @@
                   <a class="bread-link bread-home aFixx" href="index.html">الرئيسية</a>
                </li>
                <li class="active item-23">
-                  <span class="bread-current">توثيق عقود الإيجار</span>
+                  <span class="bread-current">حسابي</span>
                </li>
             </ol>
          </div>
          <!-- end breadcrumb section -->
-         <div class="add-adv-block">
-            <h2 class="form-title mb18">
-               توثيق عقود الإيجار
-            </h2>
-            <span class="bank-transfer-note w100">
-            هذه الخدمة للمساعدة في توثيق عقود الإيجار السكنية أو التجارية من خلال منصة إيجار التابعة لوزارة الشؤون البلدية والقروية والإسكان, ولإتمام ذلك يرجى تزويدنا
-            بالتالي ( نسخة هوية المستأجر - نسخة هوية المالك - نسخة صك العقار - العنوان الوطني للمؤجر والمستأجر - تفويض أو وكالة لغير المالك)
-            <br>
-            دفع الرسوم المحددة لهذه الخدمة وعمولة الموقع عبر الحسابات البنكية التابعة لمؤسسة المسوق الإفتراضي ( 300 ريال للعقد السكني - 400 ريال للعقد التجاري)
-            </span>
-            <div class="add-adv-form">
-               <a href="#" class="whatsapp-btn">
-               <i class="lab la-whatsapp"></i>
-               تواصل معنا مباشرة لمتابعة طلب الخدمة
-               </a>
-               <form>
-                  <input type="text" class="mb9" placeholder="الإسم بالكامل">
-                  <input id="intTextBox" class="mb9 inputs" placeholder="رقم الجوال">
-                  <input type="text" class="mb9" placeholder="رقم الهوية">
-                  <div class="upload__box">
-                     <div class="upload__btn-box">
-                        <label class="upload__btn" id="file" for="customFile">
-                          <span class="label-text">
-                            المرفقات
-                          </span>
-                       
-                        <b class="upload-images">رفع ملف</b>
-                        <input type="file"  class="upload__inputfile" id="customFile" >
-                        </label>
+         <!-- my-account-section -->
+         <div class="my-account-section">
+            <article class="tabbed-content tabs-side">
+               <nav class="tabs">
+                  <div class="upload__btn-box user-img">
+                     <label class="upload__btn upload-personal-img"  >
+                     <i class="las la-camera"></i>
+                     <input type="file" class="upload__inputfile " accept="image/*" id="imgpath">
+                     </label>
+                     <div class=" user-pic" >
+                        <img id="user_photo" src="images/user.png" alt="user photo" style="width:128px;height:130px;">
                      </div>
-                     <div class="upload__img-wrap"></div>
                   </div>
-                  <textarea>ملاحظات "إن وجدت"
-  
-  </textarea>
-                  <button type="submit" class="submit-adv add-style">إرسال</button>
-               </form>
-            </div>
+                  <ul>
+                     <li><a href="edit-account.html" >تعديل بيانات الحساب</a></li>
+                     <li><a href="edit-password.html" >تعديل بيانات المرور</a></li>
+                     <li><a href="my-adv.html">إعلاناتي</a></li>
+                     <li><a href="favourite.html" class="active">المفضلة</a></li>
+                     <li><a href="notifications.html">الإشعارات</a></li>
+                     <li><a href="chat.html">المحادثات</a></li>
+                     <li><a href="bank-transfer.html">التحويلات البنكية</a></li>
+                     <li><a href="request-contract.html">طلبات توثيق العقود</a></li>
+                     <li><a href="reports.html">البلاغات</a></li>
+                     <li><a href="#">تسجيل خروج</a></li>
+                     <li><a href="#">حذف الحساب</a></li>
+                  </ul>
+               </nav>
+               <div class="my-acc-tabcontent">
+                 
+                  <div  class="item item-2 active">
+                     <div class="item-content">
+                        <h2>
+                           المفضلة
+                        </h2>
+                        <div class="content-section-div cont-sec-div p37">
+                           <div class="home-block">
+                              <button class="fav-btn fav-btn-focused"><i class="lar la-heart"></i></button>
+                              <a href="#">
+                                 <div class="pro-img">
+                                    <figure>
+                                       <img src="images/buildings/01.jpg" alt="building">
+                                    </figure>
+                                 </div>
+                              </a>
+                              <div class="home-details">
+                                 <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
+                                 <ul class="home-discription">
+                                    <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
+                                    <li><i class="las la-bed"></i>5</li>
+                                    <li><i class="las la-couch"></i>2</li>
+                                    <li><i class="las la-bath"></i>5</li>
+                                 </ul>
+                                 <p>1,250,000 ريال</p>
+                                 <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
+                              </div>
+                           </div>
+                           <div class="home-block">
+                              <button class="fav-btn fav-btn-focused"><i class="lar la-heart"></i></button>
+                              <a href="#">
+                                 <div class="pro-img">
+                                    <figure>
+                                       <img src="images/buildings/01.jpg" alt="building">
+                                    </figure>
+                                 </div>
+                              </a>
+                              <div class="home-details">
+                                 <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
+                                 <ul class="home-discription">
+                                    <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
+                                    <li><i class="las la-bed"></i>5</li>
+                                    <li><i class="las la-couch"></i>2</li>
+                                    <li><i class="las la-bath"></i>5</li>
+                                 </ul>
+                                 <p>1,250,000 ريال</p>
+                                 <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
+                              </div>
+                           </div>
+                           <div class="home-block">
+                              <button class="fav-btn fav-btn-focused"><i class="lar la-heart"></i></button>
+                              <a href="#">
+                                 <div class="pro-img">
+                                    <figure>
+                                       <img src="images/buildings/01.jpg" alt="building">
+                                    </figure>
+                                 </div>
+                              </a>
+                              <div class="home-details">
+                                 <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
+                                 <ul class="home-discription">
+                                    <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
+                                    <li><i class="las la-bed"></i>5</li>
+                                    <li><i class="las la-couch"></i>2</li>
+                                    <li><i class="las la-bath"></i>5</li>
+                                 </ul>
+                                 <p>1,250,000 ريال</p>
+                                 <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                 
+                  
+                 
+                
+               </div>
+            </article>
          </div>
+         <!-- my-account-section -->
       </div>
       <!-- content-section -->
       <!-- footer section -->
@@ -330,16 +419,23 @@
       <!-- mobile show icons -->
       <div class="mobile-show-icons fixed-bottom">
          <div class="container">
-            <ul class="mobile-icons">
+            <ul class="mobile-icons mobile-icons-2">
                <li>
                   <a href="add-adv-1.html" class="link-adv-btn add-adv-btn">
                   <i class="las la-plus"></i> إضافة إعلان
                   </a>
                </li>
                <li>
-                  <a href="sign-in.html" class="sign dropbtn">
+                  <a href="#" class="sign dropbtn m0">
+                     <i class="las la-bell"></i>
+                     <span class="notification"></span>
+                     <p>الإشعارات</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="my-account.html" class="sign dropbtn">
                   <i class="las la-user icon"></i>
-                  <span>تسجيل دخول</span>
+                  <span>حسابي</span>
                   </a>
                </li>
                <li>

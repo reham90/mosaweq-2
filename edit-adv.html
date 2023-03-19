@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>المسوق الإفتراضي / إضافة إعلان</title>
+      <title>المسوق الإفتراضي / حسابي</title>
       <link rel="icon" href="images/fav.png" type="image/png" />
       <link rel="stylesheet" href="css/all.min.css" />
       <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -157,187 +157,274 @@
                   <a class="bread-link bread-home aFixx" href="index.html">الرئيسية</a>
                </li>
                <li class="active item-23">
-                  <span class="bread-current">إضافة إعلان</span>
+                  <span class="bread-current">حسابي</span>
                </li>
             </ol>
          </div>
          <!-- end breadcrumb section -->
-         <!-- price-section -->
-         <div class="price-section">
-            <div class="price-content">
-               <h2 class="form-title mb20">
-                  رسوم الإعلان
-               </h2>
-               <span class="note mb18">
-               حدد نوع حسابك لعرض الرسوم المستحقة
-               </span>
-               <ul class="nav nav-pills  price-tabs" id="pills-tab" role="tablist">
-                  <li class="nav-item">
-                     <a class="nav-link active" id="pills-owner-tab" data-toggle="pill" href="#pills-owner" role="tab" aria-controls="pills-owner" aria-selected="true">مالك عقار</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="pills-sales-tab" data-toggle="pill" href="#pills-sales" role="tab" aria-controls="pills-sales" aria-selected="false">وكيل / مسوق عقاري</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="pills-office-tab" data-toggle="pill" href="#pills-office" role="tab" aria-controls="pills-office" aria-selected="false">مكتب / مطور عقاري</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="pills-company-tab" data-toggle="pill" href="#pills-company" role="tab" aria-controls="pills-company" aria-selected="false">شركة عقارية</a>
-                  </li>
-               </ul>
-               <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-owner" role="tabpanel" aria-labelledby="pills-owner-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              رسوم البيع
-                           </p>
-                           <span>
-                           299 ريال
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              رسوم الإيجار الشهري
-                           </p>
-                           <span>
-                           99 ريال
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              رسوم الإيجار اليومي
-                           </p>
-                           <span>
-                           29 ريال
-                           </span>
-                        </div>
+         <!-- my-account-section -->
+         <div class="my-account-section">
+            <article class="tabbed-content tabs-side">
+               <nav class="tabs">
+                  <div class="upload__btn-box user-img">
+                     <label class="upload__btn upload-personal-img"  >
+                     <i class="las la-camera"></i>
+                     <input type="file" class="upload__inputfile " accept="image/*" id="imgpath">
+                     </label>
+                     <div class=" user-pic" >
+                        <img id="user_photo" src="images/user.png" alt="user photo" style="width:128px;height:130px;">
                      </div>
-                     <span class="pay-note">
-                     تدفع الرسوم فقط بعد بيع أو تأجير العقار .
-                     </span>
-                     <span class="pay-note mb22">
-                     تنطبق الرسوم على أي عملية يقوم بها عميل توصل إليك عبر التطبيق ولو كان العقار غير معروض بالتطبيق .
-                     </span>
-                     <a href="add-adv.html" class="accept-btn">
-                     أتعهد بدفع الرسوم
-                     </a>
                   </div>
-                  <div class="tab-pane fade" id="pills-sales" role="tabpanel" aria-labelledby="pills-sales-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              رسوم البيع
-                           </p>
-                           <span>
-                           299 ريال
-                           </span>
+                  <ul>
+                     <li><a href="edit-account.html" >تعديل بيانات الحساب</a></li>
+                     <li><a href="edit-password.html" >تعديل بيانات المرور</a></li>
+                     <li><a href="my-adv.html" class="active">إعلاناتي</a></li>
+                     <li><a href="favourite.html">المفضلة</a></li>
+                     <li><a href="notifications.html">الإشعارات</a></li>
+                     <li><a href="chat.html">المحادثات</a></li>
+                     <li><a href="bank-transfer.html">التحويلات البنكية</a></li>
+                     <li><a href="request-contract.html">طلبات توثيق العقود</a></li>
+                     <li><a href="reports.html">البلاغات</a></li>
+                     <li><a href="#">تسجيل خروج</a></li>
+                     <li><a href="#">حذف الحساب</a></li>
+                  </ul>
+               </nav>
+               <div class="my-acc-tabcontent">
+                 
+                  <div  class="item item-2 active">
+                     <div class="item-content">
+                       
+                      
+                        <div class="edit-title-sec">
+                           <h3 class="edit-title">
+                              <a href="my-adv.html">
+                                 <i class="las la-angle-right"></i>
+                              </a>
+                             
+                              تعديل - فيلا للبيع في شارع موهوب الجواليقي
+                           </h3>
+                           <div class="dropdown three-dots-btn">
+                              <button class="dropbtn">
+                              <i class="las la-ellipsis-v"></i>
+                              </button>
+                              <div class="dropdown-content">
+                                 <a href="#">حذف</a>
+                                 <a href="#">مراسلة الإدارة</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="price-block">
-                           <p>
-                              رسوم الإيجار الشهري
-                           </p>
-                           <span>
-                           99 ريال
-                           </span>
+                        <div class="edit-section-form">
+                           <form class="my-account-form">
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 القسم
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>فلل للبيع</option>
+                                       <option>فلل للبيع</option>
+                                       <option>فلل للبيع</option>
+                                       <option>فلل للبيع</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 المنطقة
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>الرياض</option>
+                                       <option>الرياض</option>
+                                       <option>الرياض</option>
+                                       <option>الرياض</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 المدينة
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>الرياض</option>
+                                       <option>الرياض</option>
+                                       <option>الرياض</option>
+                                       <option>الرياض</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 الحي
+                                 </label>
+                                 <input type="text" value="شارع موهوب الجواليقي">
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 الموقع على الخريطة
+                                 </label>
+                                 <div class="map-input password-input">
+                                    <input type="text" class="my-input" value="47.765423278292752,43.25242321572992625432" >
+                                    <button>
+                                    <i class="las la-map"></i> 
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 عنوان الإعلان
+                                 </label>
+                                 <input type="text" value="فيلا للبيع في شارع موهوب الجواليقي">
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 السعر
+                                 </label>
+                                 <div class="map-input password-input">
+                                    <input type="text" class="price-input" value="125000" >
+                                    <span>ريال سعودي</span>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block gallery-input">
+                                 <label>
+                                 صور الإعلان 
+                                 <span class="label-span label-span2">"حد أقصى 20 صورة" </span>
+                                 </label>
+                                 <div class="upload__box">
+                                    <div class="upload__btn-box">
+                                       <label class="upload__btn">
+                                       <span class="upload-images upload-span">رفع ملف</span>
+                                       <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                       </label>
+                                    </div>
+                                    <div class="upload__img-wrap"></div>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 المساحة
+                                 </label>
+                                 <div class="map-input password-input">
+                                    <input type="text" class="my-input" value="125000" >
+                                    <span>م<sup>2</sup></span>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 غرف النوم
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>5</option>
+                                       <option>5</option>
+                                       <option>5</option>
+                                       <option>5</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 الصالات
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>2</option>
+                                       <option>2</option>
+                                       <option>2</option>
+                                       <option>5</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 الحمامات
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>5</option>
+                                       <option>5</option>
+                                       <option>5</option>
+                                       <option>5</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 عرض الشارع
+                                 </label>
+                                 <div class="map-input password-input">
+                                    <input type="text" class="my-input" value="125000" >
+                                    <span>م</span>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block disc">
+                                 <label>
+                                 الوصف
+                                 </label>
+                                 <textarea>هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص. </textarea>
+                              </div>
+                              <div class="my-acc-form-block attachment-block">
+                                 <label class="attach-label">
+                                 الملحقات
+                                 </label>
+                                 <div class="attach">
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="stairs"   name="درج صالة" value="">
+                                       <label for="stairs"> درج صالة</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="maid"  name="غرفة خادمة" value="">
+                                       <label for="maid"> غرفة خادمة</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="kitchen"  name="مطبخ" value="">
+                                       <label for="kitchen"> مطبخ</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="attach"  name="ملحق" value="">
+                                       <label for="attach"> ملحق</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="house"  name="بيت شعر" value="">
+                                       <label for="house"> بيت شعر</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="floor"  name="حوش" value="">
+                                       <label for="floor"> حوش</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="car"  name="مدخل سيارة" value="">
+                                       <label for="car"> مدخل سيارة</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="elevator" name="مصعد" value="">
+                                       <label for="elevator"> مصعد</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="duplex" name="دوبليكس" value="">
+                                       <label for="duplex"> دوبلكس</label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="save mar45">
+                                 <button type="submit" class="save-btn">
+                                 حفظ التغييرات
+                                 </button>
+                              </div>
+                           </form>
                         </div>
-                        <div class="price-block">
-                           <p>
-                              رسوم الإيجار اليومي
-                           </p>
-                           <span>
-                           29 ريال
-                           </span>
-                        </div>
+
                      </div>
-                     <span class="pay-note">
-                     تدفع الرسوم فقط بعد بيع أو تأجير العقار .
-                     </span>
-                     <span class="pay-note mb22">
-                     تنطبق الرسوم على أي عملية يقوم بها عميل توصل إليك عبر التطبيق ولو كان العقار غير معروض بالتطبيق .
-                     </span>
-                     <a href="add-adv.html" class="accept-btn">
-                     أتعهد بدفع الرسوم
-                     </a>
                   </div>
-                  <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              رسوم البيع
-                           </p>
-                           <span>
-                           299 ريال
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              رسوم الإيجار الشهري
-                           </p>
-                           <span>
-                           99 ريال
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              رسوم الإيجار اليومي
-                           </p>
-                           <span>
-                           29 ريال
-                           </span>
-                        </div>
-                     </div>
-                     <span class="pay-note">
-                     تدفع الرسوم فقط بعد بيع أو تأجير العقار .
-                     </span>
-                     <span class="pay-note mb22">
-                     تنطبق الرسوم على أي عملية يقوم بها عميل توصل إليك عبر التطبيق ولو كان العقار غير معروض بالتطبيق .
-                     </span>
-                     <a href="add-adv.html" class="accept-btn">
-                     أتعهد بدفع الرسوم
-                     </a>
-                  </div>
-                  <div class="tab-pane fade" id="pills-company" role="tabpanel" aria-labelledby="pills-company-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              رسوم البيع
-                           </p>
-                           <span>
-                           299 ريال
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              رسوم الإيجار الشهري
-                           </p>
-                           <span>
-                           99 ريال
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              رسوم الإيجار اليومي
-                           </p>
-                           <span>
-                           29 ريال
-                           </span>
-                        </div>
-                     </div>
-                     <span class="pay-note">
-                     تدفع الرسوم فقط بعد بيع أو تأجير العقار .
-                     </span>
-                     <span class="pay-note mb22">
-                     تنطبق الرسوم على أي عملية يقوم بها عميل توصل إليك عبر التطبيق ولو كان العقار غير معروض بالتطبيق .
-                     </span>
-                     <a href="add-adv.html" class="accept-btn">
-                     أتعهد بدفع الرسوم
-                     </a>
-                  </div>
+                 
+                  
+                 
+                
                </div>
-            </div>
+            </article>
          </div>
-         <!-- price-section -->
+         <!-- my-account-section -->
       </div>
       <!-- content-section -->
       <!-- footer section -->

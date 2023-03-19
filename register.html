@@ -148,60 +148,60 @@
                <h2 class="form-title">
                   تسجيل حساب جديد
                </h2>
-               <form>
+               <div>
                   <label class="form-label extra-label-margin-2">نوع العضوية</label>
                   <div class="checkbox-section mb15">
                      <div class="radio-button-block first-checkbox-block">
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="owner" name="type" value="مالك" checked>
                            <label for="owner"> مالك</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="searcher"  name="type" value="باحث عن عقار">
                            <label for="searcher"> باحث عن عقار</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="semsar"  name="type" value="وسيط عقاري">
                            <label for="semsar"> وسيط عقاري</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="company"  name="type" value="شركة تطوير عقاري">
                            <label for="company"> شركة تطوير عقاري</label>
                         </div>
                      </div>
                      <div class="radio-button-block second-checkbox-block">
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="wakeel"  name="type" value="وكيل أو مفوض">
                            <label for="wakeel"> وكيل أو مفوض</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="sales"  name="type" value="مسوق عقاري">
                            <label for="sales"> مسوق عقاري</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="office"  name="type" value="مكتب عقاري">
                            <label for="office"> مكتب عقاري</label>
                         </div>
-                        <div class="checkbox">
+                        <div class="checkbox radio-check">
                            <input type="radio" id="rate"  name="type" value="شركة تقييم عقاري">
                            <label for="rate"> شركة تقييم عقاري</label>
                         </div>
                      </div>
                   </div>
                   <label class="form-label">اسم المستخدم<span class="label-span">"إنجليزي فقط" </span></label>
-                  <input type="text">
+                  <input type="text" id="user">
                   <label class="form-label">الإسم بالكامل</label>
                   <input type="text">
                   <label class="form-label">رقم الجوال</label>
                   <div class="map-input">
-                     <input type="text" class="price-input"  placeholder="5xxxxxxxx">
+                     <input  id="intTextBox" class="price-input inputs"  placeholder="5xxxxxxxx">
                      <span class="country">
                      966+
                      <img src="images/flag-ar.png" alt="flag">
                      </span>
                   </div>
                   <label class="form-label">البريد الإلكتروني</label>
-                  <input type="email">
+                  <input type="email" >
                   <label class="form-label">الدولة</label>
                   <div class="select-wrapper-2">
                      <select>
@@ -222,16 +222,18 @@
                   </div>
                   <label class="form-label">كلمة المرور</label>
                   <div class="map-input">
-                     <input type="password" class="my-input">
-                     <button>
-                     <i class="las la-eye"></i>
+                     <input type="password" class="my-input" id="pass1">
+                     <button onclick=togglePassword()>
+                     <i class="las la-eye-slash" id="eye-slash"></i>
+                     <i class="las la-eye" id="eye"></i>
                      </button>
                   </div>
                   <label class="form-label">تأكيد كلمة المرور</label>
                   <div class="map-input">
-                     <input type="password" class="my-input">
-                     <button>
-                     <i class="las la-eye"></i>
+                     <input type="password" class="my-input" id="pass2">
+                     <button onclick=togglePassword2()>
+                        <i class="las la-eye-slash" id="eye-slash-2"></i>
+                        <i class="las la-eye" id="eye-2"></i>
                      </button>
                   </div>
                   <label class="form-label">نبذة شخصية</label>
@@ -240,8 +242,8 @@
                      <input type="checkbox" id="accept" name="accept" value="">
                      <label for="accept" class="accept"> لقد قرأت وأوافق على <a href="add-adv-1.html">الشروط والأحكام</a></label>
                   </div>
-                  <button type="submit" class="submit-adv">تسجيل</button>
-               </form>
+                  <a href="#"  class="submit-adv">تسجيل</a>
+               </div>
             </div>
          </div>
       </div>

@@ -183,65 +183,6 @@ function showAdv(id) {
 
 
 
-///////// **my-account-section-tabs** /////////
-tabControl();
-
-/*
-We also apply the switch when a viewport change is detected on the fly
-(e.g. when you resize the browser window or flip your device from 
-portrait mode to landscape). We set a timer with a small delay to run 
-it only once when the resizing ends. It's not perfect, but it's better
-than have it running constantly during the action of resizing.
-*/
-var resizeTimer;
-$(window).on('resize', function(e) {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(function() {
-        tabControl();
-    }, 250);
-});
-
-/*
-The function below is responsible for switching the tabs when clicked.
-It switches both the tabs and the accordion buttons even if 
-only the one or the other can be visible on a screen. We prefer
-that in order to have a consistent selection in case the viewport
-changes (e.g. when you esize the browser window or flip your 
-device from portrait mode to landscape).
-*/
-function tabControl() {
-    var tabs = $('.tabbed-content').find('.tabs');
-    if (tabs.is(':visible')) {
-        tabs.find('a').on('click', function(event) {
-            event.preventDefault();
-            var target = $(this).attr('href'),
-                tabs = $(this).parents('.tabs'),
-                buttons = tabs.find('a'),
-                item = tabs.parents('.tabbed-content').find('.item');
-            buttons.removeClass('active');
-            item.removeClass('active');
-            $(this).addClass('active');
-            $(target).addClass('active');
-            div2.style.display = "none";
-            div1.style.display = "block";
-            openChatDiv.style.display = "none";
-            chatDiv.style.display = "block";
-            reportDetails.style.display = "none";
-            reports.style.display = "block";
-        });
-    } else {
-        $('.item').on('click', function() {
-            var container = $(this).parents('.tabbed-content'),
-                currId = $(this).attr('id'),
-                items = container.find('.item');
-            container.find('.tabs a').removeClass('active');
-            items.removeClass('active');
-            $(this).addClass('active');
-            container.find('.tabs a[href$="#' + currId + '"]').addClass('active');
-        });
-    }
-}
-
 
 
 ///////////////////* upload user img *//////////////////////////////////
@@ -263,45 +204,197 @@ $("#imgpath").change(function() {
     readURL(this);
 });
 
-/////////////////////////////* show edit-adv-section by clicking on edit-btn *//////////////////////////////
-function showEdit() {
-    let div1 = document.querySelector('#div1');
-    let div2 = document.querySelector('#div2');
 
-    if (div1.style.display == "block") {
-        div1.style.display = "none";
-        div2.style.display = "flex";
+
+
+////////////////////////////////////* toggle password *//////////////////////////////////////////////
+function togglePassword() {
+    var x = document.getElementById("pass1");
+    var eyeSlash = document.getElementById("eye-slash");
+    var eye = document.getElementById("eye");
+    if (x.type === "password") {
+      x.type = "text";
+      eyeSlash.style.display="none";
+      eye.style.display="block";
+
     } else {
-        div1.style.display = "block";
-        div2.style.display = "none";
+      x.type = "password";
+      eyeSlash.style.display="block";
+      eye.style.display="none";
     }
+  }
 
-};
+  function togglePassword2() {
+    var x2 = document.getElementById("pass2");
+    var eyeSlash2 = document.getElementById("eye-slash-2");
+    var eye2 = document.getElementById("eye-2");
+    if (x2.type === "password") {
+      x2.type = "text";
+      eyeSlash2.style.display="none";
+      eye2.style.display="block";
 
-function openChat() {
-    let chatDiv = document.querySelector('#chatDiv');
-    let openChatDiv = document.querySelector('#openChatDiv');
-
-    if (chatDiv.style.display == "block") {
-        chatDiv.style.display = "none";
-        openChatDiv.style.display = "flex";
     } else {
-        chatDiv.style.display = "block";
-        openChatDiv.style.display = "none";
+      x2.type = "password";
+      eyeSlash2.style.display="block";
+      eye2.style.display="none";
     }
+  }
 
+  function togglePassword3() {
+    var x3 = document.getElementById("pass3");
+    var eyeSlash3 = document.getElementById("eye-slash-3");
+    var eye3 = document.getElementById("eye-3");
+    if (x3.type === "password") {
+      x3.type = "text";
+      eyeSlash3.style.display="none";
+      eye3.style.display="block";
+
+    } else {
+      x3.type = "password";
+      eyeSlash3.style.display="block";
+      eye3.style.display="none";
+    }
+  }
+
+  /////////////////////////////////////////////* custom select  *////////////////////////////////////////////////////////
+  var x, i, j, l, ll, selElmnt, a, b, c;
+/*look for any elements with the class "select-wrapper":*/
+x = document.getElementsByClassName("select-wrapper");
+l = x.length;
+for (i = 0; i < l; i++) {
+  selElmnt = x[i].getElementsByTagName("select")[0];
+  ll = selElmnt.length;
+  /*for each element, create a new DIV that will act as the selected item:*/
+  a = document.createElement("DIV");
+  a.setAttribute("class", "select-selected");
+  a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+  x[i].appendChild(a);
+  /*for each element, create a new DIV that will contain the option list:*/
+  b = document.createElement("DIV");
+  b.setAttribute("class", "select-items select-hide");
+  for (j = 1; j < ll; j++) {
+    /*for each option in the original select element,
+    create a new DIV that will act as an option item:*/
+    c = document.createElement("DIV");
+    c.innerHTML = selElmnt.options[j].innerHTML;
+    c.addEventListener("click", function(e) {
+        /*when an item is clicked, update the original select box,
+        and the selected item:*/
+        var y, i, k, s, h, sl, yl;
+        s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+        sl = s.length;
+        h = this.parentNode.previousSibling;
+        for (i = 0; i < sl; i++) {
+          if (s.options[i].innerHTML == this.innerHTML) {
+            s.selectedIndex = i;
+            h.innerHTML = this.innerHTML;
+            y = this.parentNode.getElementsByClassName("same-as-selected");
+            yl = y.length;
+            for (k = 0; k < yl; k++) {
+              y[k].removeAttribute("class");
+            }
+            this.setAttribute("class", "same-as-selected");
+            break;
+          }
+        }
+        h.click();
+    });
+    b.appendChild(c);
+  }
+  x[i].appendChild(b);
+  a.addEventListener("click", function(e) {
+      /*when the select box is clicked, close any other select boxes,
+      and open/close the current select box:*/
+      e.stopPropagation();
+      closeAllSelect(this);
+      this.nextSibling.classList.toggle("select-hide");
+      this.classList.toggle("select-arrow-active");
+    });
 }
-
-function report() {
-    let reports = document.querySelector('#reports');
-    let reportDetails = document.querySelector('#reportDetails');
-
-    if (reports.style.display == "block") {
-        reports.style.display = "none";
-        reportDetails.style.display = "flex";
+function closeAllSelect(elmnt) {
+  /*a function that will close all select boxes in the document,
+  except the current select box:*/
+  var x, y, i, xl, yl, arrNo = [];
+  x = document.getElementsByClassName("select-items");
+  y = document.getElementsByClassName("select-selected");
+  xl = x.length;
+  yl = y.length;
+  for (i = 0; i < yl; i++) {
+    if (elmnt == y[i]) {
+      arrNo.push(i)
     } else {
-        reports.style.display = "block";
-        reportDetails.style.display = "none";
+      y[i].classList.remove("select-arrow-active");
     }
-
+  }
+  for (i = 0; i < xl; i++) {
+    if (arrNo.indexOf(i)) {
+      x[i].classList.add("select-hide");
+    }
+  }
 }
+/*if the user clicks anywhere outside the select box,
+then close all select boxes:*/
+document.addEventListener("click", closeAllSelect);
+
+
+
+  /////////////////////////////////////////* some validations for input fields  *///////////////////////////////////////
+  $(function(){
+    $("#user").keypress(function(event){
+        var ew = event.which;
+        if(ew == 32)
+            return true;
+        if(48 <= ew && ew <= 57)
+            return true;
+        if(65 <= ew && ew <= 90)
+            return true;
+        if(97 <= ew && ew <= 122)
+            return true;
+        return false;
+    });
+});
+  
+
+function setInputFilter(textbox, inputFilter, errMsg) {
+    ["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop", "focusout"].forEach(function(event) {
+        var el = document.querySelector('.inputs');
+        if(el){
+            el.addEventListener(event, function(e) {
+                if (inputFilter(this.value)) {
+                  // Accepted value
+                  if (["keydown","mousedown","focusout"].indexOf(e.type) >= 0){
+                    this.classList.remove("input-error");
+                    this.setCustomValidity("");
+                  }
+                  this.oldValue = this.value;
+                  this.oldSelectionStart = this.selectionStart;
+                  this.oldSelectionEnd = this.selectionEnd;
+                } else if (this.hasOwnProperty("oldValue")) {
+                  // Rejected value - restore the previous one
+                  this.classList.add("input-error");
+                  this.setCustomValidity(errMsg);
+                  this.reportValidity();
+                  this.value = this.oldValue;
+                  this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+                } else {
+                  // Rejected value - nothing to restore
+                  this.value = "";
+                }
+              });
+        }
+    
+    });
+  }
+  
+  
+  // Install input filters.
+  setInputFilter(document.getElementById("intTextBox"), function(value) {
+    return /^-?\d*$/.test(value); }, "Must be an integer");
+
+   
+
+  setInputFilter(document.getElementById("currencyTextBox"), function(value) {
+    return /^-?\d*[.,]?\d{0,2}$/.test(value); }, "Must be a currency value");
+
+
+  

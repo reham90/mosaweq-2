@@ -232,12 +232,71 @@ header {
   color: #999;
   font-family: "Cairo-SemiBold";
   padding: 0 17px;
- 
+ transition: 0.5s;
   outline: none;
 position: relative;
  -webkit-appearance: none;
   -moz-appearance: none;
 
+}
+.search-select-part select:focus{
+  border:1px solid var(--main-hover);
+}
+
+
+.select-wrapper select {
+  display: none; /*hide original SELECT element:*/
+}
+
+
+
+
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  width: 254px;
+  height: 44px;
+  border: 1px solid rgb(227, 228, 230);
+  display: flex;
+  align-items: center;
+  background-color: var(--sec-main-color);
+  font-size: 14px;
+  color: #999;
+  font-family: "Cairo-SemiBold";
+  padding: 0 17px;
+  transition: 0.5s;
+  outline: none;
+  position: relative;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.select-arrow-active{
+  border: 1px solid var(--main-hover);
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: var(--main-hover);
+ 
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.select-items div:hover{
+  color: var(--sec-color);
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .select-wrapper{
   position: relative;
@@ -390,6 +449,9 @@ position: relative;
   padding: 7px 0;
   transition: all 0.3s ease-in-out;
 }
+.lang-part .dropdown-content{
+  min-width: 200px;
+}
 .my-account-section .dropdown-content{
   left: 100%;
 }
@@ -447,7 +509,7 @@ position: absolute;
 top:0;
 background-color: var(--main-hover);
 color: var(--sec-color);
-padding: 6px;
+
 width: 8px;
 height: 8px;
 border-radius: 50%;
@@ -487,6 +549,10 @@ flex-shrink: 0;
   }
   .mobile-icons li .add-adv-btn i{
     color: var(--main-color);
+    margin-bottom: 5px;
+  }
+  .sign i{
+    margin-bottom: 5px;
   }
   .mobile-show-icons li .dropbtn{
     flex-direction: column;
@@ -671,7 +737,7 @@ html[dir="rtl"] .search-button i{
   font-family: "Line Awesome Free";
   font-weight: 700;
   font-size: 24px;
-  /* transform: scale(-1); */
+ margin-bottom: 5px;
   color: var(--main-color);
   line-height: 1.1;
 }
@@ -679,7 +745,15 @@ html[dir="rtl"] .search-button i{
   display: flex;
   justify-content: center;
 }
-
+.mobile-icons li{
+  border-inline-end: 1px solid #9999995e;
+}
+.mobile-icons li:last-child{
+  border-inline-end: 0;
+}
+.mobile-icons p{
+  margin: 0;
+}
 
 
 .close-search::after {
@@ -728,6 +802,9 @@ html[dir="rtl"] .search-button i{
   padding-inline-start: 20px;
   padding-inline-end: 20px;
    
+   }
+   .edit-title a{
+    color: #999;
    }
    .extra-title-sec{
     margin-bottom: 30px !important;
@@ -864,6 +941,19 @@ align-self: flex-start !important;
   position: absolute;
   top:10px;
   inset-inline-end: 10px;
+}
+.fav-btn-focused{
+  background-color: #f73c3c;
+
+}
+.fav-btn-focused:hover{
+  background-color: var(--sec-main-color) !important;
+}
+.fav-btn-focused:hover i{
+  color: #999 !important;
+}
+.fav-btn-focused i{
+  color: var(--sec-color) !important;
 }
 .fav-btn:focus{
   outline: none;
@@ -1030,6 +1120,29 @@ align-self: flex-start !important;
 .accept-btn:focus{
   outline: none;
 }
+#eye{
+  display: none;
+}
+#eye-2{
+  display: none;
+}
+#eye-3{
+  display: none;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.input-error{
+  outline: 1px solid red;
+}
 
 @media (max-width: 991px) {
  
@@ -1094,6 +1207,8 @@ align-self: flex-start !important;
   background-size: cover;
 background-position: center;
 height: 100vh;
+overflow: hidden;
+position: relative;
 }
 .view-map-head{
   background-color: transparent;
@@ -1105,7 +1220,7 @@ height: 100vh;
    background-color: transparent;
   }
 .view-map-section{
-  min-height: calc(100vh - 80px);
+ 
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -1116,7 +1231,7 @@ height: 100vh;
   justify-content: center;
   position: relative;
   width:375px;
-  min-height: 70vh;
+  min-height: 80vh;
 }
 .adv-buttons{
   width: 375px;
@@ -1191,6 +1306,7 @@ transition: 0.5s;
 .hide{
   display: none;
 }
+
 .map-note{
   display: flex;
   color: var(--sec-color);
@@ -1205,6 +1321,8 @@ transition: 0.5s;
   align-items: center;
   left:50%;
   transform: translateX(-50%);
+  position: absolute;
+  bottom: 0px;
 }
 
 /*                       map-view-page                                */
@@ -1394,6 +1512,7 @@ This is the minimum CSS that you will need in order for this to work
   opacity: 1;
   visibility: visible;
   height: auto;
+  padding-bottom: 50px !important;
 }
 .my-account-form{
   padding-inline-end: 37px;
@@ -1528,10 +1647,13 @@ position: relative;
   font-family: "Cairo-SemiBold";
   background-color: var(--sec-main-color);
   outline: none;
-  border: 0;
+  border: 1px solid transparent;
+  transition: 0.5s;
 }
+
 .my-acc-form-block input:focus{
   outline: none;
+  border:1px solid var(--main-hover);
 }
 .my-acc-form-block input::placeholder{
   font-size: 14px;
@@ -1549,11 +1671,14 @@ position: relative;
   font-family: "Cairo-SemiBold";
   background-color: var(--sec-main-color);
   outline: none;
-  border: 0;
- 
+  border: 1px solid transparent;
+ transition: 0.5s;
 position: relative;
  -webkit-appearance: none;
   -moz-appearance: none;
+}
+.my-acc-form-block select:focus{
+  border: 1px solid var(--main-hover);
 }
 .save{
   display: flex;
@@ -1602,26 +1727,38 @@ position: relative;
 }
 
 .adv-pills .nav-link.active, .nav-pills .show>.nav-link{
+
+  background-color: var(--main-color);
+color: var(--sec-color);
+}
+.adv-pills .nav-link{
   background-color: rgb(237, 237, 237);
   box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.05);
   color: #999;
 }
-.adv-pills .nav-link{
-background-color: var(--main-color);
-color: var(--sec-color);
-}
 .pro-img{
   width: 290px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.pro-img:hover img{
+  transform: scale(1.2);
 }
 .pro-img img{
   width: 100%;
+  transition: 0.5s;
 }
 .pro-img-2{
   width: 207px;
-
+  overflow: hidden;
+  transition: 0.5s;
+}
+.pro-img-2:hover img{
+  transform: scale(1.2);
 }
 .pro-img-2 img{
   max-width: 100%;
+  transition: 0.5s;
 }
 .adv-home a{
   font-size: 14px !important;
@@ -1725,6 +1862,10 @@ color: var(--sec-color);
 .edit-title i{
   font-size: 24px;
   margin-inline-end: 18px;
+  color: #999;
+}
+html[dir="ltr"] .edit-title i{
+  transform: scale(-1);
 }
 .three-dots-btn{
   background-color: transparent;
@@ -1781,8 +1922,11 @@ color: var(--sec-color);
 .gallery-input .upload__img-wrap{
   grid-template-columns: repeat(7,1fr) ;
 }
-.gallery-input span{
+.label-span2{
   color: var(--main-color) !important;
+}
+.upload-span{
+  color: #999 !important;
 }
 .disc{
   align-items: start !important;
@@ -1877,13 +2021,23 @@ flex-wrap: wrap;
   align-items: center;
 
 }
-.chat-titl:before{
-  content: "";
-  font-family: "Line Awesome Free";
-  font-weight: 700;
+.chat-titl2{
+  font-size: 16px;
+  font-family: "Cairo-Bold";
+  color: #4d4d4d;
+  margin: 0 0 5px;
+  text-align: start;
+  margin-inline-end: 5px;
+  display: flex;
+  align-items: center;
+
+}
+.chat-titl i{
+ 
   font-size: 24px;
   color: #4d4d4d;
 margin-inline-start: -5px;
+margin-inline-end: 5px;
 }
 .chat-titl-block{
   width: 100%;
@@ -2145,14 +2299,21 @@ color: var(--sec-color);
 .mb9{
   margin-bottom: 9px !important;
 }
-input[type=date]:required:invalid::-webkit-datetime-edit {
+
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  bottom: 0;
   color: transparent;
+  cursor: pointer;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto;
 }
-input[type=date]:focus::-webkit-datetime-edit {
-  color: var(--sec-main-color) !important;
-}
-
-
 
 
 input[type="date"]{
@@ -2723,6 +2884,7 @@ width: 100%;
 }
 .map-view-buttons-block{
   width: 100%;
+  min-height: 60vh;
 
 }
 .adv-buttons{
@@ -2738,14 +2900,17 @@ width: 100%;
   text-align: center;
   height: auto;
   justify-content: center;
+  bottom: 70px;
 }
 .map-view-cont{
   width: 100%;
   position: relative;
+  margin-bottom: 20px;
   
 }
 .map-view-body{
   height: auto;
+  overflow: scroll;
 }
 .price-content{
   width: 100%;
@@ -2862,12 +3027,12 @@ text-align: center;
   height: 40px;
   width: 100%;
   background-color: var(--sec-main-color);
-  border: 0;
+  border: 1px solid transparent;
   outline: none;
   margin-bottom: 19px;
     display: flex;
     align-items: center;
-  
+  transition: 0.5s;
     font-size: 14px;
     color: #999;
     font-family: "Cairo-SemiBold";
@@ -2877,16 +3042,19 @@ text-align: center;
     -webkit-appearance: none;
     -moz-appearance: none;
 }
+.add-adv-form select:focus{
+  border: 1px solid var(--main-hover);
+}
 .add-adv-form input{
   height: 40px;
   width: 100%;
   background-color: var(--sec-main-color);
-  border: 0;
+  border: 1px solid transparent;
   outline: none;
   margin-bottom: 19px;
     display: flex;
     align-items: center;
-  
+  transition: 0.5s;
     font-size: 14px;
     color: #999;
     font-family: "Cairo-SemiBold";
@@ -2895,6 +3063,9 @@ text-align: center;
     position: relative;
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+.add-adv-form input:focus{
+  border:1px solid var(--main-hover);
 }
 .map-input{
   position: relative;
@@ -2904,8 +3075,21 @@ text-align: center;
   color: #999;
   font-size: 22px;
  
+ 
 }
 .map-input button{
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:50%;
+  transform: translateY(-50%);
+  position: absolute;
+  inset-inline-end: 17px;
+}
+.date-input i{
   background-color: transparent;
   border: 0;
   outline: none;
@@ -3069,12 +3253,12 @@ cursor: pointer;
   height: 100px;
   width: 100%;
   background-color: var(--sec-main-color);
-  border: 0;
+  border: 1px solid transparent;
   outline: none;
   margin-bottom: 25px;
     display: flex;
     align-items: center;
-  
+  transition: 0.5s;
     font-size: 14px;
     color: #999;
     font-family: "Cairo-SemiBold";
@@ -3083,6 +3267,9 @@ cursor: pointer;
     position: relative;
     -webkit-appearance: none;
     -moz-appearance: none;
+}
+.add-adv-form textarea:focus{
+  border: 1px solid var(--main-hover);
 }
 .checkbox-section{
   display: flex;
@@ -3184,6 +3371,12 @@ html[dir="ltr"] .radio-button-block input:checked::after{
   text-align: start;
   line-height: 1.7;
  
+}
+.radio-check label{
+  color: var(--main-color);
+}
+.radio-check input{
+  margin-bottom: 0 !important;
 }
 html[dir="ltr"] .checkbox label{
   line-height: 1.5;
@@ -4024,6 +4217,9 @@ outline: none;
   .search-select-part select{
     width: 100%;
   }
+  .select-items div, .select-selected{
+    width: 100%;
+  }
   .search-open {
     top: 100px;
   }
@@ -4036,6 +4232,9 @@ outline: none;
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .search-select-part select{
+    width: 170px;
+  }
+  .select-items div, .select-selected{
     width: 170px;
   }
   html[dir="ltr"] .search-select-part select{
@@ -4092,6 +4291,9 @@ outline: none;
   .search-select-part select{
     width: 170px;
   }
+  .select-items div, .select-selected{
+    width: 170px;
+  }
   html[dir="ltr"] .search-select-part select{
     width: 185px;
   }
@@ -4101,6 +4303,9 @@ outline: none;
 @media only screen and (max-width: 994px)  and (min-width: 768px)  {
   .my-account-section .tabs ul{
     display: block;
+  }
+  .my-account-section .tabs ul{
+    overflow-x: auto;
   }
   html[dir="ltr"] .bank-transfer-table{
     width: 78%;
@@ -4185,6 +4390,9 @@ outline: none;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 20px;
   }
+  .hide {
+    display: none;
+}
   .cont-sec-div{
     grid-template-columns: repeat(1,1fr) !important;
   }
@@ -4313,6 +4521,7 @@ html[dir="ltr"] .nav-foot-link{
  }
  .map-view-body{
   height: auto;
+  overflow: scroll;
  }
 }
 

@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>the virtual marketer/ add adv</title>
+      <title>the virtual marketer/ my account </title>
       <link rel="icon" href="images/fav.png" type="image/png" />
       <link rel="stylesheet" href="css/all.min.css" />
       <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -56,14 +56,35 @@
             </div>
             <div class="lang-part mobile-lang-part">
                <div class="lang-section">
-                  <div class="lang-word ">
-                     <a href="index.html" class="language-anchor">العربية</a>
+                  <div class="dropdown">
+                     <div class="lang-word ">
+                        <a href="index.html" class="language-anchor">العربية</a>
+                     </div>
                   </div>
                </div>
-               <a href="sign-in-en.html" class="sign dropbtn">
-               <i class="las la-user icon"></i>
-               <span>sign in</span>
+               <a href="#" class="sign dropbtn m0">
+               <i class="las la-bell"></i>
+               <span class="notification"></span>
                </a>
+               <div class="dropdown">
+                  <button class="dropbtn">
+                  <i class="las la-user icon"></i>
+                  <span>my account<i class="las la-angle-down arrow-down-dropdown"></i> </span>
+                  </button>
+                  <div class="dropdown-content">
+                     <a href="edit-account-en.html">Edit Account Information</a>
+                     <a href="edit-password-en.html">Modify Login Data</a>
+                     <a href="my-adv-en.html">my advertisements</a>
+                     <a href="favourite-en.html">favourite</a>
+                     <a href="notifications-en.html">notifications</a>
+                     <a href="chat-en.html">chat</a>
+                     <a href="bank-transfer-en.html">bank transfer</a>
+                     <a href="request-contracts-en.html">Contract Documentation Requests</a>
+                     <a href="reports-en.html">reports</a>
+                     <a href="#">sign out</a>
+                     <a href="#">delete account</a>
+                  </div>
+               </div>
                <a href="add-adv-1-en.html" class="link-adv-btn add-adv-btn">
                <i class="las la-plus"></i> add adv
                </a>
@@ -134,192 +155,185 @@
                   <a class="bread-link bread-home aFixx" href="index.html">home</a>
                </li>
                <li class="active item-23">
-                  <span class="bread-current">add advertisement</span>
+                  <span class="bread-current">my account </span>
                </li>
             </ol>
          </div>
          <!-- end breadcrumb section -->
-         <div class="add-adv-block">
-            <div class="add-adv-form">
-               <h2 class="form-title">
-                  add advertisement
-               </h2>
-               <form>
-                  <label class="form-label">department</label>
-                  <div class="select-wrapper-2">
-                     <select>
-                        <option>choose department</option>
-                        <option>choose department</option>
-                        <option>choose department</option>
-                        <option>choose department</option>
-                     </select>
-                  </div>
-                  <label class="form-label">region</label>
-                  <div class="select-wrapper-2">
-                     <select>
-                        <option>choose area</option>
-                        <option>choose area</option>
-                        <option>choose area</option>
-                        <option>choose area</option>
-                     </select>
-                  </div>
-                  <label class="form-label">city</label>
-                  <div class="select-wrapper-2">
-                     <select>
-                        <option>choose city</option>
-                        <option>choose city</option>
-                        <option>choose city</option>
-                        <option>choose city</option>
-                     </select>
-                  </div>
-                  <label class="form-label">neighborhood</label>
-                  <input type="text">
-                  <label class="form-label">location on map</label>
-                  <div class="map-input">
-                     <input type="text" class="my-input">
-                     <button>
-                     <i class="las la-map"></i> 
-                     </button>
-                  </div>
-                  <label class="form-label">advertisement address</label>
-                  <input type="text">
-                  <label class="form-label">price</label>
-                  <div class="map-input">
-                     <input  id="currencyTextBox" class="price-input inputs">
-                     <span>R.S</span>
-                  </div>
-                  <label class="form-label">advertisement photos<span class="label-span">"maximum of 20 photos" </span></label>
-                  <div class="upload__box">
-                     <div class="upload__btn-box">
-                        <label class="upload__btn">
-                        <span class="upload-images">upload file</span>
-                        <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
-                        </label>
+         <!-- my-account-section -->
+         <div class="my-account-section">
+            <article class="tabbed-content tabs-side">
+               <nav class="tabs">
+                  <div class="upload__btn-box user-img">
+                     <label class="upload__btn upload-personal-img"  >
+                     <i class="las la-camera"></i>
+                     <input type="file" class="upload__inputfile " accept="image/*" id="imgpath">
+                     </label>
+                     <div class=" user-pic" >
+                        <img id="user_photo" src="images/user.png" alt="user photo" style="width:128px;height:130px;">
                      </div>
-                     <div class="upload__img-wrap"></div>
                   </div>
-                  <label class="form-label extra-label-margin">area</label>
-                  <div class="map-input">
-                     <input type="text" class="my-input">
-                     <span>m<sup>2</sup></span>
-                  </div>
-                  <label class="form-label ">street width</label>
-                  <div class="map-input">
-                     <input type="text" class="my-input">
-                     <span>m</span>
-                  </div>
-                  <label class="form-label">interface</label>
-                  <input type="text">
-                  <label class="form-label">rooms</label>
-                  <div class="select-wrapper-2">
-                     <select>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                     </select>
-                  </div>
-                  <label class="form-label">lounges</label>
-                  <div class="select-wrapper-2">
-                     <select>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                     </select>
-                  </div>
-                  <label class="form-label">bathrooms</label>
-                  <div class="select-wrapper-2">
-                     <select>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                     </select>
-                  </div>
-                  <label class="form-label">kitchens</label>
-                  <div class="select-wrapper-2">
-                     <select>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                     </select>
-                  </div>
-                  <label class="form-label">no. of entries</label>
-                  <div class="select-wrapper-2">
-                     <select>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                        <option>1</option>
-                     </select>
-                  </div>
-                  <label class="form-label">type of building</label>
-                  <input type="text">
-                  <label class="form-label">age of building</label>
-                  <input type="text">
-                  <label class="form-label">discription</label>
-                  <textarea></textarea>
-                  <label class="form-label extra-label-margin-2">attachments</label>
-                  <div class="checkbox-section">
-                     <div class="checkbox-block first-checkbox-block">
-                        <div class="checkbox">
-                           <input type="checkbox" id="stairs"  name="internal staircase" value="">
-                           <label for="stairs"> internal staircase</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="maid" name="room made" value="">
-                           <label for="maid"> room made</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="launge"  name="internal courtyard" value="">
-                           <label for="launge"> internal courtyard</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="evaluater"  name="elevator" value="">
-                           <label for="evaluater"> elevator</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="chairs"  name="external office" value="">
-                           <label for="chairs"> external office</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="water"  name="Availability of water services" value="">
-                           <label for="water"> Availability of water services</label>
-                        </div>
-                     </div>
-                     <div class="checkbox-block second-checkbox-block">
-                        <div class="checkbox">
-                           <input type="checkbox" id="driver"  name="driver room" value="">
-                           <label for="driver"> driver room</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="upstairs" name="upper attachment" value="">
-                           <label for="upstairs"> upper attachment</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="car" name="car entrance" value="">
-                           <label for="car"> car entrance</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="tent"  name="hair house / tent" value="">
-                           <label for="tent"> hair house / tent</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="pool"  name="pool" value="">
-                           <label for="pool"> pool</label>
-                        </div>
-                        <div class="checkbox">
-                           <input type="checkbox" id="electricity"  name="Availability of electricity services" value="">
-                           <label for="electricity"> Availability of electricity services</label>
+                  <ul>
+                     <li><a href="edit-account-en.html" >Edit Account Information</a></li>
+                     <li><a href="edit-password-en.html" >Modify login data</a></li>
+                     <li><a href="my-adv-en.html" class="active">my advertisements</a></li>
+                     <li><a href="favourite-en.html">favourite</a></li>
+                     <li><a href="notifications-en.html">notifications</a></li>
+                     <li><a href="chat-en.html">chat</a></li>
+                     <li><a href="bank-transfer-en.html">bank transfer</a></li>
+                     <li><a href="request-contract-en.html">Requests for documentation of contracts</a></li>
+                     <li><a href="reports-en.html">reports</a></li>
+                     <li><a href="#">sign out</a></li>
+                     <li><a href="#">delete account</a></li>
+                  </ul>
+               </nav>
+               <div class="my-acc-tabcontent">
+               
+                  <div  class="item item-2 active">
+                     <div class="item-content">
+                        <h2 class="mb18">
+                           my advertisements
+                        </h2>
+                        <ul class="nav nav-pills mb18  adv-pills" id="pills-tab" role="tablist">
+                           <li class="nav-item">
+                              <a class="nav-link active" id="pills-current-tab" data-toggle="pill" href="#pills-current" role="tab" aria-controls="pills-current" aria-selected="true">current ads</a>
+                           </li>
+                           <li class="nav-item">
+                              <a class="nav-link" id="pills-expired-tab" data-toggle="pill" href="#pills-expired" role="tab" aria-controls="pills-expired" aria-selected="false">expired ads</a>
+                           </li>
+                        </ul>
+                        <div class="tab-content p37" id="pills-tabContent">
+                           <div class="tab-pane fade show active" id="pills-current" role="tabpanel" aria-labelledby="pills-current-tab">
+                              <div class="content-section-div content-section-div-2">
+                                 <div class="home-block">
+                                    <a href="#">
+                                       <div class="pro-img-2">
+                                          <figure>
+                                             <img src="images/buildings/01.jpg" alt="building">
+                                          </figure>
+                                       </div>
+                                    </a>
+                                    <div class="home-details home-details-2">
+                                       <a href="post.html" class="home-adv-title">Villa for sale in Mahoub Al Jawaliqi Street</a>
+                                       <p>1,250,000 R.S</p>
+                                       <ul class="edit-adv-btns">
+                                          <li>
+                                             <a href="edit-adv-en.html"  class="edit-adv-btn">
+                                             edit
+                                             </a>
+                                          </li>
+                                         
+                                          <li>
+                                             <a href="#" class="delete-adv-btn">
+                                             delete
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="home-block">
+                                    <a href="#">
+                                       <div class="pro-img-2">
+                                          <figure>
+                                             <img src="images/buildings/04.jpg" alt="building">
+                                          </figure>
+                                       </div>
+                                    </a>
+                                    <div class="home-details home-details-2">
+                                       <a href="post.html" class="home-adv-title">Villa for sale in Mahoub Al Jawaliqi Street</a>
+                                       <p>1,250,000 R.S</p>
+                                       <ul class="edit-adv-btns">
+                                          <li>
+                                             <a href="edit-adv-en.html"  class="edit-adv-btn">
+                                             edit
+                                             </a>
+                                          </li>
+                                         
+                                          <li>
+                                             <a href="#" class="delete-adv-btn">
+                                             delete
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="tab-pane fade" id="pills-expired" role="tabpanel" aria-labelledby="pills-expired-tab">
+                              <div class="content-section-div">
+                                 <div class="home-block">
+                                    <a href="#">
+                                       <div class="pro-img-2">
+                                          <figure>
+                                             <img src="images/buildings/02.jpg" alt="building">
+                                          </figure>
+                                       </div>
+                                    </a>
+                                    <div class="home-details home-details-2">
+                                       <a href="post.html" class="home-adv-title">Villa for sale in Mahoub Al Jawaliqi Street</a>
+                                       <p>1,250,000 R.S</p>
+                                       <ul class="edit-adv-btns">
+                                          <li>
+                                             <a href="edit-adv-en.html"  class="edit-adv-btn">
+                                             edit
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#" class="update-adv-btn">
+                                             update 
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#" class="delete-adv-btn">
+                                             delete
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                                 <div class="home-block">
+                                    <a href="#">
+                                       <div class="pro-img-2">
+                                          <figure>
+                                             <img src="images/buildings/05.jpg" alt="building">
+                                          </figure>
+                                       </div>
+                                    </a>
+                                    <div class="home-details home-details-2">
+                                       <a href="post.html" class="home-adv-title">Villa for sale in Mahoub Al Jawaliqi Street</a>
+                                       <p>1,250,000 R.S</p>
+                                       <ul class="edit-adv-btns">
+                                          <li>
+                                             <a href="edit-adv-en.html"  class="edit-adv-btn">
+                                             edit
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#" class="update-adv-btn">
+                                             update 
+                                             </a>
+                                          </li>
+                                          <li>
+                                             <a href="#" class="delete-adv-btn">
+                                             delete
+                                             </a>
+                                          </li>
+                                       </ul>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
                   </div>
-                  <button type="submit" class="submit-adv">add advertisement</button>
-               </form>
-            </div>
+                 
+                   
+                     </div>
+                  </div>
+               </div>
+            </article>
          </div>
+         <!-- my-account-section -->
       </div>
       <!-- content-section -->
       <!-- footer section -->
@@ -468,16 +482,23 @@
       <!-- mobile show icons -->
       <div class="mobile-show-icons fixed-bottom">
          <div class="container">
-            <ul class="mobile-icons">
+            <ul class="mobile-icons mobile-icons-2">
                <li>
                   <a href="add-adv-1-en.html" class="link-adv-btn add-adv-btn">
                   <i class="las la-plus"></i> add adv
                   </a>
                </li>
                <li>
-                  <a href="sign-in-en.html" class="sign dropbtn">
+                  <a href="#" class="sign dropbtn m0">
+                     <i class="las la-bell"></i>
+                     <span class="notification"></span>
+                     <p>notifications</p>
+                  </a>
+               </li>
+               <li>
+                  <a href="my-account-en.html" class="sign dropbtn">
                   <i class="las la-user icon"></i>
-                  <span>sign in</span>
+                  <span>my account</span>
                   </a>
                </li>
                <li>

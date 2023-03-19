@@ -146,9 +146,10 @@
                </h2>
                <input type="text" placeholder="username" class="sign-inputs">
                <div class="map-input">
-                  <input type="password" class="my-input" placeholder="password">
-                  <button>
-                  <i class="las la-eye-slash"></i>
+                  <input type="password" class="my-input" id="pass1" placeholder="password">
+                  <button onclick="togglePassword()">
+                     <i class="las la-eye-slash" id="eye-slash"></i>
+                     <i class="las la-eye" id="eye"></i>
                   </button>
                </div>
                <a href="forget-password-en.html" class="forget-pass">forget your password ?</a>

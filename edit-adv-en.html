@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>the virtual marketer/ add advertisement </title>
+      <title>the virtual marketer/ my account </title>
       <link rel="icon" href="images/fav.png" type="image/png" />
       <link rel="stylesheet" href="css/all.min.css" />
       <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -28,7 +28,7 @@
       <header class="fixed-top">
          <div class="search-bar ">
             <figure class="img-logo">
-               <a href="index-en.html"><img src="images/logo.png" class="img-fluid" /></a>
+               <a href="index-en.html"><img src="images/logo.png" class="img-fluid" alt="logo" /></a>
             </figure>
             <div class="search-select-part">
                <div class="search-section" id="search-icon">
@@ -155,195 +155,273 @@
                   <a class="bread-link bread-home aFixx" href="index.html">home</a>
                </li>
                <li class="active item-23">
-                  <span class="bread-current">add advertisement </span>
+                  <span class="bread-current">my account </span>
                </li>
             </ol>
          </div>
          <!-- end breadcrumb section -->
-         <!-- price-section -->
-         <div class="price-section">
-            <div class="price-content">
-               <h2 class="form-title mb20">
-                  Advertising fees
-               </h2>
-               <span class="note mb18">
-               Select your account type to view the fees payable
-               </span>
-               <ul class="nav nav-pills  price-tabs" id="pills-tab" role="tablist">
-                  <li class="nav-item">
-                     <a class="nav-link active" id="pills-owner-tab" data-toggle="pill" href="#pills-owner" role="tab" aria-controls="pills-owner" aria-selected="true">property owner</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="pills-sales-tab" data-toggle="pill" href="#pills-sales" role="tab" aria-controls="pills-sales" aria-selected="false">Real estate agent / marketer</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="pills-office-tab" data-toggle="pill" href="#pills-office" role="tab" aria-controls="pills-office" aria-selected="false">Office / real estate developer</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="pills-company-tab" data-toggle="pill" href="#pills-company" role="tab" aria-controls="pills-company" aria-selected="false">Real estate company</a>
-                  </li>
-               </ul>
-               <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-owner" role="tabpanel" aria-labelledby="pills-owner-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              selling fee
-                           </p>
-                           <span>
-                           299 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              Monthly rental fee
-                           </p>
-                           <span>
-                           99 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              daily rental fee
-                           </p>
-                           <span>
-                           29 r.s
-                           </span>
-                        </div>
+         <!-- my-account-section -->
+         <div class="my-account-section">
+            <article class="tabbed-content tabs-side">
+               <nav class="tabs">
+                  <div class="upload__btn-box user-img">
+                     <label class="upload__btn upload-personal-img"  >
+                     <i class="las la-camera"></i>
+                     <input type="file" class="upload__inputfile " accept="image/*" id="imgpath">
+                     </label>
+                     <div class=" user-pic" >
+                        <img id="user_photo" src="images/user.png" alt="user photo" style="width:128px;height:130px;">
                      </div>
-                     <span class="pay-note">
-                     Fees are paid only after selling or renting the property.
-                     </span>
-                     <span class="pay-note mb22">
-                     Fees apply to any transaction performed by a customer who reached you through the application, even if the property is not displayed in the application.
-                     </span>
-                     <a href="add-adv-en.html">
-                     <button class="accept-btn">
-                     I undertake to pay the fee
-                     </button>
-                     </a>
                   </div>
-                  <div class="tab-pane fade" id="pills-sales" role="tabpanel" aria-labelledby="pills-sales-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              selling fee
-                           </p>
-                           <span>
-                           299 r.s
-                           </span>
+                  <ul>
+                     <li><a href="edit-account-en.html" >Edit Account Information</a></li>
+                     <li><a href="edit-password-en.html" >Modify login data</a></li>
+                     <li><a href="my-adv-en.html" class="active">my advertisements</a></li>
+                     <li><a href="favourite-en.html">favourite</a></li>
+                     <li><a href="notifications-en.html">notifications</a></li>
+                     <li><a href="chat-en.html">chat</a></li>
+                     <li><a href="bank-transfer-en.html">bank transfer</a></li>
+                     <li><a href="request-contract-en.html">Requests for documentation of contracts</a></li>
+                     <li><a href="reports-en.html">reports</a></li>
+                     <li><a href="#">sign out</a></li>
+                     <li><a href="#">delete account</a></li>
+                  </ul>
+               </nav>
+               <div class="my-acc-tabcontent">
+               
+                  <div  class="item item-2 active">
+                     <div class="item-content">
+                       
+                        <div class="edit-title-sec">
+                           <h3 class="edit-title">
+                              <a href="my-adv-en.html">
+                                 <i class="las la-angle-right"></i>
+                              </a>
+                              edit - Villa for sale in Mahoub Al Jawaliqi Street
+                           </h3>
+                           <div class="dropdown three-dots-btn">
+                              <button class="dropbtn">
+                              <i class="las la-ellipsis-v"></i>
+                              </button>
+                              <div class="dropdown-content">
+                                 <a href="#">delete</a>
+                                 <a href="#">messaging management</a>
+                              </div>
+                           </div>
                         </div>
-                        <div class="price-block">
-                           <p>
-                              Monthly rental fee
-                           </p>
-                           <span>
-                           99 r.s
-                           </span>
+                        <div class="edit-section-form">
+                           <form class="my-account-form">
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 department
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>villas for sale</option>
+                                       <option>villas for sale</option>
+                                       <option>villas for sale</option>
+                                       <option>villas for sale</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 region
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>Ryiadh</option>
+                                       <option>Ryiadh</option>
+                                       <option>Ryiadh</option>
+                                       <option>Ryiadh</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 city
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>Ryiadh</option>
+                                       <option>Ryiadh</option>
+                                       <option>Ryiadh</option>
+                                       <option>Ryiadh</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 area
+                                 </label>
+                                 <input type="text" value="mawhob al-gwaleky street">
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 site on map
+                                 </label>
+                                 <div class="map-input password-input">
+                                    <input type="text" class="my-input" value="47.765423278292752,43.25242321572992625432" >
+                                    <button>
+                                    <i class="las la-map"></i> 
+                                    </button>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 advertisement address
+                                 </label>
+                                 <input type="text" value="Villa for sale in Mahoub Al Jawaliqi Street">
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 price
+                                 </label>
+                                 <div class="map-input password-input">
+                                    <input type="text" class="price-input" value="125000" >
+                                    <span>R.S</span>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block gallery-input">
+                                 <label>
+                                 advertisement photos
+                                 <span class="label-span label-span2">"Maximum of 20 photos" </span>
+                                 </label>
+                                 <div class="upload__box">
+                                    <div class="upload__btn-box">
+                                       <label class="upload__btn">
+                                       <span class="upload-images upload-span">upload file</span>
+                                       <input type="file" multiple="" data-max_length="20" class="upload__inputfile">
+                                       </label>
+                                    </div>
+                                    <div class="upload__img-wrap"></div>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 area
+                                 </label>
+                                 <div class="map-input password-input">
+                                    <input type="text" class="my-input" value="125000" >
+                                    <span>m<sup>2</sup></span>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 bedrooms
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>5</option>
+                                       <option>5</option>
+                                       <option>5</option>
+                                       <option>5</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 lounges
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>2</option>
+                                       <option>2</option>
+                                       <option>2</option>
+                                       <option>5</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 bathrooms
+                                 </label>
+                                 <div class="select-wrapper-2 select-wrapper-3">
+                                    <select>
+                                       <option>5</option>
+                                       <option>5</option>
+                                       <option>5</option>
+                                       <option>5</option>
+                                    </select>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block">
+                                 <label>
+                                 street width
+                                 </label>
+                                 <div class="map-input password-input">
+                                    <input type="text" class="my-input" value="125000" >
+                                    <span>م</span>
+                                 </div>
+                              </div>
+                              <div class="my-acc-form-block disc">
+                                 <label>
+                                 discription
+                                 </label>
+                                 <textarea>There are many variants of Lorem Ipsum texts available, but the majority have been modified in some way by introducing some anecdotes or random words into the text. If you want to use a Lorem Ipsum text, you must first check that there are no embarrassing or inappropriate words or phrases hidden in it.
+                                 </textarea>
+                              </div>
+                              <div class="my-acc-form-block attachment-block">
+                                 <label class="attach-label">
+                                 attachments
+                                 </label>
+                                 <div class="attach">
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="stairs"  name="lounge" value="">
+                                       <label for="stairs"> lounge upstairs</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="maid"  name="room" value="">
+                                       <label for="maid"> room made</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="kitchen"  name="kitchen" value="">
+                                       <label for="kitchen"> kitchen</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="attach"  name="attachment" value="">
+                                       <label for="attach"> attachment</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="house" name="hair house" value="">
+                                       <label for="house"> hair house</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="floor"  name="floor" value="">
+                                       <label for="floor"> floor</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="car"  name="car" value="">
+                                       <label for="car"> car entrance</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="elevator name="elevator" value="">
+                                       <label for="elevator"> elevator</label>
+                                    </div>
+                                    <div class="checkbox checkbox-block">
+                                       <input type="checkbox" id="duplex"  name="duplex" value="">
+                                       <label for="duplex"> duplex</label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="save mar45">
+                                 <button type="submit" class="save-btn">
+                                 save changes
+                                 </button>
+                              </div>
+                           </form>
                         </div>
-                        <div class="price-block">
-                           <p>
-                              daily rental fee
-                           </p>
-                           <span>
-                           29 r.s
-                           </span>
-                        </div>
+
                      </div>
-                     <span class="pay-note">
-                     Fees are paid only after selling or renting the property.
-                     </span>
-                     <span class="pay-note mb22">
-                     Fees apply to any transaction performed by a customer who reached you through the application, even if the property is not displayed in the application.
-                     </span>
-                     <a href="add-adv-en.html">
-                     <button class="accept-btn">
-                     I undertake to pay the fee
-                     </button>
-                     </a>
                   </div>
-                  <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              selling fee
-                           </p>
-                           <span>
-                           299 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              Monthly rental fee
-                           </p>
-                           <span>
-                           99 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              daily rental fee
-                           </p>
-                           <span>
-                           29 r.s
-                           </span>
-                        </div>
+                 
+                   
                      </div>
-                     <span class="pay-note">
-                     Fees are paid only after selling or renting the property.
-                     </span>
-                     <span class="pay-note mb22">
-                     Fees apply to any transaction performed by a customer who reached you through the application, even if the property is not displayed in the application.
-                     </span>
-                     <a href="add-adv-en.html">
-                     <button class="accept-btn">
-                     I undertake to pay the fee
-                     </button>
-                     </a>
-                  </div>
-                  <div class="tab-pane fade" id="pills-company" role="tabpanel" aria-labelledby="pills-company-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              selling fee
-                           </p>
-                           <span>
-                           299 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              Monthly rental fee
-                           </p>
-                           <span>
-                           99 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              daily rental fee
-                           </p>
-                           <span>
-                           29 r.s
-                           </span>
-                        </div>
-                     </div>
-                     <span class="pay-note">
-                     Fees are paid only after selling or renting the property.
-                     </span>
-                     <span class="pay-note mb22">
-                     Fees apply to any transaction performed by a customer who reached you through the application, even if the property is not displayed in the application.
-                     </span>
-                     <a href="add-adv-en.html">
-                     <button class="accept-btn">
-                     I undertake to pay the fee
-                     </button>
-                     </a>
                   </div>
                </div>
-            </div>
+            </article>
          </div>
-         <!-- price-section -->
+         <!-- my-account-section -->
       </div>
       <!-- content-section -->
       <!-- footer section -->
