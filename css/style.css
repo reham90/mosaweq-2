@@ -941,6 +941,7 @@ align-self: flex-start !important;
   position: absolute;
   top:10px;
   inset-inline-end: 10px;
+  z-index: 9;
 }
 .fav-btn-focused{
   background-color: #f73c3c;
