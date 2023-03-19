@@ -2318,11 +2318,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 input[type="date"]{
-  text-align: end;
-}
-html[dir="ltr"] input[type="date"]{
   text-align: start;
 }
+
 
 
 
