@@ -16,7 +16,7 @@
       <link rel="stylesheet" href="css/swiper.min.css" />
       <link rel="stylesheet" href="css/style.css" />
    </head>
-   <body>
+   <body class="body">
       <!-- preloader -->
       <div class="preloader">
          <div class="progress">
@@ -24,6 +24,227 @@
          </div>
       </div>
       <!-- preloader -->
+
+        <!-- advanced-search -->
+   
+        <div id="myNav" class="overlay-advanced-search" >
+         <div class="overlay-content">
+           <div class="title-bar">
+             <button class="closebtn" onclick="closeNav()"><i class="las la-times"></i></button>
+             
+             <h2>
+              search for real state
+             </h2>
+             <button class="closebtn" id="reloader" ><i class="las la-undo-alt"></i></button>
+           </div>
+   
+           <div class="filter-div">
+           <span>
+             real state filter
+             <i class="las la-plus"></i>
+           </span>
+           <a href="#" class="explore-btn">
+            explore real state advantages
+           </a>
+           </div>
+ 
+           <div class="add-adv-form">
+             <form>
+               <label class="form-label">real state department</label>
+               <div class="select-wrapper-2">
+                  <select>
+                     <option>choose department</option>
+                     <option>choose department</option>
+                     <option>choose department</option>
+                     <option>choose department</option>
+                  </select>
+               </div>
+               <label class="form-label">city</label>
+               <div class="select-wrapper-2">
+                  <select>
+                     <option>choose department</option>
+                     <option>choose department</option>
+                     <option>choose department</option>
+                     <option>choose department</option>
+                  </select>
+               </div>
+               <label class="form-label">rental period</label>
+               <div class="checkbox-section radio-button-block">
+ 
+              
+               <div class="checkbox radio-check">
+                 <input type="radio" id="daily" name="time" value="daily" checked>
+                 <label for="daily"> daily</label>
+              </div>
+ 
+              <div class="checkbox radio-check">
+               <input type="radio" id="monthly" name="time" value="monthly" >
+               <label for="monthly"> monthly</label>
+            </div>
+ 
+            <div class="checkbox radio-check">
+             <input type="radio" id="yearly" name="time" value="yearly" >
+             <label for="yearly"> yearly</label>
+          </div>
+         </div>
+ 
+         <label class="form-label">rooms</label>
+         <div class="checkbox-section radio-button-block">
+ 
+        
+         <div class="checkbox radio-check">
+           <input type="radio" id="all" name="rooms" value="all" checked>
+           <label for="all"> all</label>
+        </div>
+ 
+        <div class="checkbox radio-check">
+         <input type="radio" id="two" name="rooms" value="2 rooms" >
+         <label for="two"> 2 rooms</label>
+      </div>
+ 
+      <div class="checkbox radio-check">
+       <input type="radio" id="three" name="rooms" value="3 rooms" >
+       <label for="three"> 3 rooms</label>
+    </div>
+    <div class="checkbox radio-check">
+     <input type="radio" id="four" name="rooms" value="4 rooms" >
+     <label for="four"> 4 rooms</label>
+  </div>
+   </div>
+ 
+   <label class="form-label">rent type</label>
+         <div class="checkbox-section radio-button-block">
+ 
+        
+         <div class="checkbox radio-check">
+           <input type="radio" id="single" name="type" value="single" checked>
+           <label for="single"> single</label>
+        </div>
+ 
+        <div class="checkbox radio-check">
+         <input type="radio" id="family" name="type" value="family" >
+         <label for="family"> family</label>
+      </div>
+ 
+     
+   </div>
+   <label class="form-label">price</label>
+   <div class="map-input">
+      
+     <input  id="currencyTextBox" placeholder="lowest price" class=" inputs">
+     <input  id="currencyTextBox" placeholder="highest price" class=" inputs">
+     
+   </div>
+   <label class="form-label">lounges</label>
+   <div class="checkbox-section radio-button-block">
+ 
+  
+   <div class="checkbox radio-check">
+     <input type="radio" id="all-launges" name="lounge" value="all" checked>
+     <label for="all-launges"> all</label>
+  </div>
+ 
+  <div class="checkbox radio-check">
+   <input type="radio" id="one" name="lounge" value="+1" >
+   <label for="one"> +1</label>
+ </div>
+ 
+ <div class="checkbox radio-check">
+   <input type="radio" id="plusTwo" name="lounge" value="+2" >
+   <label for="plusTwo"> +2</label>
+ </div>
+ <div class="checkbox radio-check">
+   <input type="radio" id="plusThree" name="lounge" value="+3" >
+   <label for="plusThree"> +3</label>
+ </div>
+ 
+ 
+ </div>
+ 
+ <label class="form-label">bathrooms</label>
+ <div class="checkbox-section radio-button-block">
+ 
+ 
+ <div class="checkbox radio-check">
+   <input type="radio" id="all-launges" name="bathroom" value="all" checked>
+   <label for="all-launges"> all</label>
+ </div>
+ 
+ <div class="checkbox radio-check">
+ <input type="radio" id="one" name="bathroom" value="+1" >
+ <label for="one"> +1</label>
+ </div>
+ 
+ <div class="checkbox radio-check">
+ <input type="radio" id="plusTwo" name="bathroom" value="+2" >
+ <label for="plusTwo"> +2</label>
+ </div>
+ <div class="checkbox radio-check">
+ <input type="radio" id="plusThree" name="bathroom" value="+3" >
+ <label for="plusThree"> +3</label>
+ </div>
+ 
+ 
+ </div>
+ <label class="form-label">floor number</label>
+ <div class="select-wrapper-2">
+    <select>
+      <option>choose department</option>
+      <option>choose department</option>
+      <option>choose department</option>
+      <option>choose department</option>
+    </select>
+ </div>
+ 
+ <label class="form-label">age of real state</label>
+ <div class="select-wrapper-2">
+    <select>
+      <option>choose department</option>
+      <option>choose department</option>
+      <option>choose department</option>
+      <option>choose department</option>
+    </select>
+ </div>
+ 
+ <label class="form-label">extras</label>
+ <div class="checkbox-section checkbox-block">
+   <div class="checkbox">
+     <input type="checkbox" id="car" name="car entry" value="">
+     <label for="car"> car entry</label>
+  </div>
+  <div class="checkbox">
+   <input type="checkbox" id="airconditioner" name="air conditioners" value="">
+   <label for="airconditioner"> air conditioners</label>
+ </div>
+ <div class="checkbox">
+   <input type="checkbox" id="airconditioner" name="special roof" value="">
+   <label for="airconditioner"> special roof</label>
+ </div>
+ <div class="checkbox">
+   <input type="checkbox" id="villa" name="in villa" value="">
+   <label for="villa"> in villa</label>
+ </div>
+ <div class="checkbox">
+   <input type="checkbox" id="twoEntries" name="two entries" value="">
+   <label for="twoEntries"> two entries</label>
+ </div>
+ <div class="checkbox">
+   <input type="checkbox" id="special" name="special entry" value="">
+   <label for="special"> special entry</label>
+ </div>
+ </div>
+ <button type="submit" class="submit-adv">search</button>
+             </form>
+           </div>
+         </div>
+        
+        
+        
+       </div>
+     
+    
+     <!-- advanced-search -->
+
       <!-- header section -->
       <header class="fixed-top">
          <div class="search-bar ">
@@ -52,6 +273,7 @@
                   <i class="las la-search"></i>
                   search
                   </button>
+                  <button class="advanced-search-btn" onclick="openNav()">advanced search</button>
                </div>
             </div>
             <div class="lang-part mobile-lang-part">
@@ -122,6 +344,7 @@
             <button class="add-to fixed-search">
             <span class="open-search"></span>
             </button>
+           
          </div>
       </header>
       <!-- header section     -->
@@ -436,6 +659,12 @@
                      </button>
                   </div>
                </li>
+               <li>
+                  <button class="advanced-search-btn" onclick="openNav()">
+                    <i class="las la-glasses"></i>
+                   advanced search
+                  </button>
+                </li>
             </ul>
          </div>
       </div>

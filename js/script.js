@@ -397,4 +397,28 @@ function setInputFilter(textbox, inputFilter, errMsg) {
     return /^-?\d*[.,]?\d{0,2}$/.test(value); }, "Must be a currency value");
 
 
+   ///////////////////// advanced-search ///////////////////////
+   function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+    document.querySelector('.body').style.overflow="hidden";
+   
+  
+   
+    
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+
+  let overlayAdvanced = document.querySelector('.overlay-advanced-search');
+  window.onclick = e => {
+    if (e.target === overlayAdvanced) {
+      overlayAdvanced.style.width = '0';
+    }
+  }
+
+  
+
+
   

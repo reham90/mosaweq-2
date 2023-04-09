@@ -490,10 +490,39 @@
                   </a>
                </li>
                <li>
-                  <a href="#">
+                  <button type="button" data-toggle="modal" data-target="#exampleModal">
                   <i class="las la-star"></i>
                   تقييم الإعلان
-                  </a>
+                  </button>
+                  <!-- adv rating modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered">
+                       <div class="modal-content">
+                         <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">أضف تقييمك للخدمة</h5>
+                          
+                         </div>
+                         <div class="modal-body">
+                          <span class="modal-ad-title">
+                           فيلا للبيع في شارع موهوب الجواليقي
+                           </span>
+                           <ul class="rating-list">
+                              <li class="gold"><i class="las la-star"></i></li>
+                              <li class="gold"><i class="las la-star"></i></li>
+                              <li class="gold"><i class="las la-star"></i></li>
+                              <li class="gold"><i class="las la-star"></i></li>
+                              <li><i class="las la-star"></i></li>
+                             
+                           </ul>
+                           <textarea>أضف ملاحظاتك على الخدمة</textarea>
+                         </div>
+                         <div class="modal-footer">
+                           
+                           <button type="button" class="send-comment">إرسال</button>
+                         </div>
+                       </div>
+                     </div>
+                   </div>
                </li>
                <li>
                   <a href="#">

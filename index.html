@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
-  <body>
+  <body class="body">
     <!-- preloader -->
     <div class="preloader">
       <div class="progress">
@@ -26,6 +26,226 @@
       </div>
     </div>
     <!-- preloader -->
+
+    <!-- advanced-search -->
+   
+      <div id="myNav" class="overlay-advanced-search" >
+        <div class="overlay-content">
+          <div class="title-bar">
+            <button class="closebtn" onclick="closeNav()"><i class="las la-times"></i></button>
+            
+            <h2>
+              ابحث عن عقار
+            </h2>
+            <button class="closebtn" id="reloader" ><i class="las la-undo-alt"></i></button>
+          </div>
+  
+          <div class="filter-div">
+          <span>
+            فلاتر عقار
+            <i class="las la-plus"></i>
+          </span>
+          <a href="#" class="explore-btn">
+            استكشف مزايا عقار
+          </a>
+          </div>
+
+          <div class="add-adv-form">
+            <form>
+              <label class="form-label">قسم العقار</label>
+              <div class="select-wrapper-2">
+                 <select>
+                    <option>اختر القسم</option>
+                    <option>اختر القسم</option>
+                    <option>اختر القسم</option>
+                    <option>اختر القسم</option>
+                 </select>
+              </div>
+              <label class="form-label">المدينة</label>
+              <div class="select-wrapper-2">
+                 <select>
+                    <option>اختر القسم</option>
+                    <option>اختر القسم</option>
+                    <option>اختر القسم</option>
+                    <option>اختر القسم</option>
+                 </select>
+              </div>
+              <label class="form-label">مدة الإيجار</label>
+              <div class="checkbox-section radio-button-block">
+
+             
+              <div class="checkbox radio-check">
+                <input type="radio" id="daily" name="time" value="يومي" checked>
+                <label for="daily"> يومي</label>
+             </div>
+
+             <div class="checkbox radio-check">
+              <input type="radio" id="monthly" name="time" value="شهري" >
+              <label for="monthly"> شهري</label>
+           </div>
+
+           <div class="checkbox radio-check">
+            <input type="radio" id="yearly" name="time" value="سنوي" >
+            <label for="yearly"> سنوي</label>
+         </div>
+        </div>
+
+        <label class="form-label">الغرف</label>
+        <div class="checkbox-section radio-button-block">
+
+       
+        <div class="checkbox radio-check">
+          <input type="radio" id="all" name="rooms" value="الكل" checked>
+          <label for="all"> الكل</label>
+       </div>
+
+       <div class="checkbox radio-check">
+        <input type="radio" id="two" name="rooms" value="غرفتين" >
+        <label for="two"> غرفتين</label>
+     </div>
+
+     <div class="checkbox radio-check">
+      <input type="radio" id="three" name="rooms" value="3 غرف" >
+      <label for="three"> 3 غرف</label>
+   </div>
+   <div class="checkbox radio-check">
+    <input type="radio" id="four" name="rooms" value="4 غرف" >
+    <label for="four"> 4 غرف</label>
+ </div>
+  </div>
+
+  <label class="form-label">نوع الإيجار</label>
+        <div class="checkbox-section radio-button-block">
+
+       
+        <div class="checkbox radio-check">
+          <input type="radio" id="single" name="type" value="عزاب" checked>
+          <label for="single"> عزاب</label>
+       </div>
+
+       <div class="checkbox radio-check">
+        <input type="radio" id="family" name="type" value="عوائل" >
+        <label for="family"> عوائل</label>
+     </div>
+
+    
+  </div>
+  <label class="form-label">السعر</label>
+  <div class="map-input">
+     
+    <input  id="currencyTextBox" placeholder="السعر الأدنى" class=" inputs">
+    <input  id="currencyTextBox" placeholder="السعر الأعلى" class=" inputs">
+    
+  </div>
+  <label class="form-label">الصالات</label>
+  <div class="checkbox-section radio-button-block">
+
+ 
+  <div class="checkbox radio-check">
+    <input type="radio" id="all-launges" name="lounge" value="الكل" checked>
+    <label for="all-launges"> الكل</label>
+ </div>
+
+ <div class="checkbox radio-check">
+  <input type="radio" id="one" name="lounge" value="+1" >
+  <label for="one"> +1</label>
+</div>
+
+<div class="checkbox radio-check">
+  <input type="radio" id="plusTwo" name="lounge" value="+2" >
+  <label for="plusTwo"> +2</label>
+</div>
+<div class="checkbox radio-check">
+  <input type="radio" id="plusThree" name="lounge" value="+3" >
+  <label for="plusThree"> +3</label>
+</div>
+
+
+</div>
+
+<label class="form-label">دورات المياه</label>
+<div class="checkbox-section radio-button-block">
+
+
+<div class="checkbox radio-check">
+  <input type="radio" id="all-launges" name="bathroom" value="الكل" checked>
+  <label for="all-launges"> الكل</label>
+</div>
+
+<div class="checkbox radio-check">
+<input type="radio" id="one" name="bathroom" value="+1" >
+<label for="one"> +1</label>
+</div>
+
+<div class="checkbox radio-check">
+<input type="radio" id="plusTwo" name="bathroom" value="+2" >
+<label for="plusTwo"> +2</label>
+</div>
+<div class="checkbox radio-check">
+<input type="radio" id="plusThree" name="bathroom" value="+3" >
+<label for="plusThree"> +3</label>
+</div>
+
+
+</div>
+<label class="form-label">رقم الدور</label>
+<div class="select-wrapper-2">
+   <select>
+      <option>اختر القسم</option>
+      <option>اختر القسم</option>
+      <option>اختر القسم</option>
+      <option>اختر القسم</option>
+   </select>
+</div>
+
+<label class="form-label">عمر العقار</label>
+<div class="select-wrapper-2">
+   <select>
+      <option>اختر القسم</option>
+      <option>اختر القسم</option>
+      <option>اختر القسم</option>
+      <option>اختر القسم</option>
+   </select>
+</div>
+
+<label class="form-label">إضافات</label>
+<div class="checkbox-section checkbox-block">
+  <div class="checkbox">
+    <input type="checkbox" id="car" name="مدخل سيارة" value="">
+    <label for="car"> مدخل سيارة</label>
+ </div>
+ <div class="checkbox">
+  <input type="checkbox" id="airconditioner" name="مكيفات" value="">
+  <label for="airconditioner"> مكيفات</label>
+</div>
+<div class="checkbox">
+  <input type="checkbox" id="airconditioner" name="سطح خاص" value="">
+  <label for="airconditioner"> سطح خاص</label>
+</div>
+<div class="checkbox">
+  <input type="checkbox" id="villa" name="في فيلا" value="">
+  <label for="villa"> في فيلا</label>
+</div>
+<div class="checkbox">
+  <input type="checkbox" id="twoEntries" name="مدخلين" value="">
+  <label for="twoEntries"> مدخلين</label>
+</div>
+<div class="checkbox">
+  <input type="checkbox" id="special" name="مدخل خاص" value="">
+  <label for="special"> مدخل خاص</label>
+</div>
+</div>
+<button type="submit" class="submit-adv">بحث</button>
+            </form>
+          </div>
+        </div>
+       
+       
+       
+      </div>
+    
+   
+    <!-- advanced-search -->
     <!-- header section -->
     <header class="fixed-top">
 
@@ -59,6 +279,8 @@
           <i class="las la-search"></i>
           بحث
         </button>
+
+        <button class="advanced-search-btn" onclick="openNav()">بحث متقدم</button>
         </div>
 
        
@@ -514,6 +736,12 @@
                   <span class="search-span">بحث</span>
                   </button>
                </div>
+            </li>
+            <li>
+              <button class="advanced-search-btn" onclick="openNav()">
+                <i class="las la-glasses"></i>
+                بحث متقدم
+              </button>
             </li>
          </ul>
       </div>

@@ -3,7 +3,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
- 
+ position: relative;
   background-color: var(--sec-main-color);
   padding-top: 134px;
 }
@@ -254,7 +254,7 @@ position: relative;
 
 /*style the items (options), including the selected item:*/
 .select-items div,.select-selected {
-  width: 254px;
+  width: 200px;
   height: 44px;
   border: 1px solid rgb(227, 228, 230);
   display: flex;
@@ -532,7 +532,7 @@ flex-shrink: 0;
   }
   .mobile-icons{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     list-style: none;
     margin: 0;
     padding: 0;
@@ -564,7 +564,7 @@ flex-shrink: 0;
     font-size: 24px;
   }
   .dropbtn{
-    font-size: 12px;
+    font-size: 10px;
     justify-content: center;
     width: 100%;
   }
@@ -592,7 +592,7 @@ flex-shrink: 0;
     flex-direction: column;
  }
 .search-span{
-  font-size: 12px;
+  font-size: 10px;
   font-family: "Cairo-Bold";
   color: var(--main-color);
  }
@@ -605,8 +605,7 @@ flex-shrink: 0;
  
  .add-adv-btn{
   width: 100%;
-  
-  font-size: 12px;
+  font-size: 10px;
   margin-inline-start: 0px;
  }
  .add-adv-btn i{
@@ -691,8 +690,141 @@ flex-shrink: 0;
 }
 
 
+/* advanced-search */
+.advanced-search-btn{
+  background: transparent;
+    border: 0;
+    outline: none;
+    margin-inline-start: 10px;
+    color: var(--main-color);
+    font-family: "Cairo-Bold";
+    font-size: 16px;
+    transition: 0.5s;
+}
+.advanced-search-btn:hover{
+  color: var(--main-hover);
+}
+.advanced-search-bg{
+  background: rgba(0,0,0,0.5);
+ 
+  position: fixed;
+  height: 100%;
+  top: 0;
+ 
+  z-index: 9999;
+ 
+}
+#myNavOverlay{
+  width: 0%;
+  transition: 0.5s;
+}
+.advanced-search-btn:focus{
+  outline: none;
+}
+.overlay-advanced-search {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  bottom: 0;
+  inset-inline-start: 0;
+  background-color: rgba(0,0,0,0.5);
+  overflow-x: hidden;
+  transition: 0.5s;
+ 
+}
+.overlay-content {
+  position: relative;
+  top: 0;
+  width: 350px;
+  background: var(--sec-color);
+  padding: 20px;
+  
+  
+}
+.filter-div span{
+  color:var(--main-hover);
+  font-size: 14px;
+  display: block;
+  padding:0 0 15px ;
+  text-align: center;
+  font-family: "Cairo-SemiBold";
+}
 
 
+
+.title-bar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.title-bar h2{
+  color: var(--main-color);
+    font-size: 16px;
+    font-family: "Cairo-Bold";
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.overlay-advanced-search .closebtn {
+ background-color: transparent;
+ border: 0;
+ outline: none;
+  display: flex;
+  padding: 0;
+  color: var(--main-color);
+}
+.overlay-advanced-search .closebtn i{
+  font-size: 25px;
+}
+.filter-div{
+  border:1px solid var(--main-hover);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding:15px;
+  margin-bottom: 30px;
+}
+.explore-btn{
+  background-color: var(--main-color);
+  color: var(--sec-color);
+  font-size: 14px;
+  font-family: "Cairo-Bold";
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+width: 100%;
+}
+.explore-btn:hover{
+  background-color: var(--main-hover);
+  color: var(--sec-color);
+}
+.overlay-content .add-adv-form{
+  width: 100%;
+}
+.overlay-content .checkbox-section{
+  justify-content: space-between;
+  margin-top: 5px;
+  flex-wrap: wrap;
+}
+.overlay-content .checkbox-block .checkbox{
+  width: 150px;
+ 
+}
+
+@media screen and (max-height: 450px) {
+ 
+  .overlay-advanced-search .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/* advanced-search */
 
 
 .search-button {
@@ -776,6 +908,20 @@ html[dir="rtl"] .search-button i{
 }
 
 @media (max-width: 991px) {
+  .advanced-search-btn{
+    display: none;
+  }
+  .mobile-show-icons .advanced-search-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-size: 10px;
+  }
+  .mobile-show-icons .advanced-search-btn i{
+    font-size: 24px;
+    margin-bottom: 5px;
+    width: 100%;
+  }
   .tabbed-content{
     flex-wrap: wrap;
   }
@@ -890,6 +1036,17 @@ align-self: flex-start !important;
 .home-details a:hover{
   text-decoration: none;
   color: var(--main-hover) !important;
+}
+.modal-ad-title{
+  color: var(--main-hover) ;
+  font-size: 16px ;
+  font-family: "Cairo-Bold" ;
+  text-transform: capitalize ;
+  transition: 0.5s;
+  
+  display: block ;
+  margin-bottom: 18px ;
+  text-align: center;
 }
 .home-discription{
   display: flex;
@@ -2857,6 +3014,10 @@ width: 100%;
 .advertiser-info-section a{
   display: block !important;
 }
+.advertiser-info-section button{
+  width: 100%;
+  margin-bottom: 5px;
+}
 .advertiser-info-section a span{
   display: block;
 }
@@ -3653,6 +3814,30 @@ margin-inline-end: 8px;
   text-transform: capitalize;
   text-align: start;
 }
+.modal-title{
+  margin: 0 ;
+  color: var(--main-color);
+  font-family: "Cairo-Bold";
+  font-size: 18px;
+  text-transform: capitalize;
+  text-align: center;
+}
+.modal-header{
+  border-bottom: 0;
+  justify-content: center;
+}
+.modal-body{
+  padding-top: 0;
+}
+.modal-body .rating-list{
+  justify-content: center;
+}
+.modal-body .rating-list li{
+  text-align: center;
+}
+.modal-body .rating-list li i{
+  font-size: 25px;
+}
 .building-price{
   color: var(--main-hover);
   font-size: 24px;
@@ -3837,6 +4022,20 @@ background-color: var(--sec-main-color);
 border: 0;
 outline: none;
 }
+.modal-body textarea{
+  width: 100%;
+height:100px ;
+padding: 17px;
+margin: 0 0 10px;
+background-color: var(--sec-main-color);
+border: 0;
+outline: none;
+color: #999;
+font-size: 14px;
+}
+.modal-footer .send-comment{
+  margin: 0 auto;
+}
 .send-comment-div{
   display: flex;
   justify-content: flex-end;
@@ -3927,7 +4126,7 @@ outline: none;
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: center;
+ 
   justify-content: flex-start;
 }
 .contacting-advertiser-list li{
@@ -3954,8 +4153,38 @@ outline: none;
 }
 .contacting-advertiser-list li a:hover{
   background-color: var(--main-hover);
+  color: var(--sec-color);
+}
+.contacting-advertiser-list li button{
+  padding: 0 15px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: var(--main-color);
+  color: var(--sec-color);
+  font-size: 14px;
+  font-family: "Cairo-Bold";
+  text-transform: capitalize;
+  transition: 0.5s;
+  text-align: start;
+  white-space: nowrap;
+  border:0;
+  outline:none;
+}
+.contacting-advertiser-list li button:focus{
+  outline: none;
+}
+.contacting-advertiser-list li button:hover{
+  background-color: var(--main-hover);
+  color: var(--sec-color);
 }
 .contacting-advertiser-list li a i{
+  font-size: 18px;
+  color: var(--sec-color);
+  margin-inline-end: 7px;
+}
+.contacting-advertiser-list li button i{
   font-size: 18px;
   color: var(--sec-color);
   margin-inline-end: 7px;
