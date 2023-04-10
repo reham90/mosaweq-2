@@ -417,8 +417,51 @@ function setInputFilter(textbox, inputFilter, errMsg) {
       overlayAdvanced.style.width = '0';
     }
   }
+/////////////////////////// rating stars ////////////////////////////////
+// $('.stars ul li').on('click', function(){
+//   var rate_id = $(this).attr('id');
+ 
 
+//   $(this).toggleClass('active');
+ 
+// });
   
+var current_star_statusses = [];
 
+star_elements = $('.la-star').parent();
+
+star_elements.find(".la-star").each(function(i, elem) {
+  current_star_statusses.push($(elem).hasClass('yellow'));
+});
+
+star_elements.find(".la-star").mouseenter(changeRatingStars);
+star_elements.find(".la-star").mouseleave(resetRatingStars);
+
+/**
+ * Changes the rating star colors when hovering over it.
+ */
+function changeRatingStars() {
+  // Current star hovered
+  var star = $(this);
+
+  // Removes all colors first from all stars
+  $('.la-star').removeClass('gray').removeClass('yellow');
+
+  // Makes the current hovered star yellow
+  star.addClass('yellow');
+
+  // Makes the previous stars yellow and the next stars gray
+  star.parent().prevAll().children('.la-star').addClass('yellow');
+  star.parent().nextAll().children('.la-star').addClass('gray');
+}
+
+/**
+ * Resets the rating star colors when not hovered anymore.
+ */
+function resetRatingStars() {
+  star_elements.each(function(i, elem) {
+    $(elem).removeClass('yellow').removeClass('gray').addClass(current_star_statusses[i] ? 'yellow' : 'gray');
+  });
+}
 
   

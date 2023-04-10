@@ -1037,6 +1037,29 @@ align-self: flex-start !important;
   text-decoration: none;
   color: var(--main-hover) !important;
 }
+
+
+
+
+
+
+
+
+.stars li:hover i {
+color: var(--main-hover);
+}
+.stars ul.active li.active i{
+color: var(--main-hover);
+}
+
+
+
+
+
+
+
+
+
 .modal-ad-title{
   color: var(--main-hover) ;
   font-size: 16px ;
@@ -3838,6 +3861,24 @@ margin-inline-end: 8px;
 .modal-body .rating-list li i{
   font-size: 25px;
 }
+.modal-body .rating-list li.active i{
+  color: var(--main-hover);
+}
+
+
+.list-inline li i.yellow {
+  color: var(--main-hover);
+}
+
+.list-inline li i.gray {
+  color: #cecece;
+}
+
+
+
+
+
+
 .building-price{
   color: var(--main-hover);
   font-size: 24px;
