@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>المسوق الإفتراضي / حسابي</title>
+      <title>إضافة إعلان</title>
       <link rel="icon" href="images/fav.png" type="image/png" />
       <link rel="stylesheet" href="css/all.min.css" />
       <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -58,32 +58,13 @@
             <div class="lang-part mobile-lang-part">
                <div class="lang-section">
                   <div class="lang-word ">
-                     <a href="index-en.html" class="language-anchor">English</a>
+                     <a href="add-adv-en.html" class="language-anchor">English</a>
                   </div>
                </div>
-               <a href="#" class="sign dropbtn m0">
-               <i class="las la-bell"></i>
-               <span class="notification"></span>
+               <a href="sign-in.html" class="sign dropbtn">
+               <i class="las la-user icon"></i>
+               <span>تسجيل دخول</span>
                </a>
-               <div class="dropdown">
-                  <button class="dropbtn">
-                  <i class="las la-user icon"></i>
-                  <span>حسابي <i class="las la-angle-down arrow-down-dropdown"></i> </span>
-                  </button>
-                  <div class="dropdown-content">
-                     <a href="edit-account.html">تعديل بيانات الحساب</a>
-                     <a href="edit-password.html">تعديل بيانات المرور</a>
-                     <a href="my-adv.html">إعلاناتي</a>
-                     <a href="favourite.html">المفضلة</a>
-                     <a href="notifications.html">الإشعارات</a>
-                     <a href="chat.html">المحادثات</a>
-                     <a href="bank-transfer.html">التحويلات البنكية</a>
-                     <a href="request-contracts.html">طلبات توثيق العقود</a>
-                     <a href="reports.html">البلاغات</a>
-                     <a href="#">تسجيل خروج</a>
-                     <a href="#">حذف الحساب</a>
-                  </div>
-               </div>
                <a href="add-adv-1.html" class="link-adv-btn add-adv-btn">
                <i class="las la-plus"></i> إضافة إعلان
                </a>
@@ -157,123 +138,289 @@
                   <a class="bread-link bread-home aFixx" href="index.html">الرئيسية</a>
                </li>
                <li class="active item-23">
-                  <span class="bread-current">حسابي</span>
+                  <span class="bread-current">إضافة إعلان</span>
                </li>
             </ol>
          </div>
          <!-- end breadcrumb section -->
-         <!-- my-account-section -->
-         <div class="my-account-section">
-            <article class="tabbed-content tabs-side">
-               <nav class="tabs">
-                  <div class="upload__btn-box user-img">
-                     <label class="upload__btn upload-personal-img"  >
-                     <i class="las la-camera"></i>
-                     <input type="file" class="upload__inputfile " accept="image/*" id="imgpath">
-                     </label>
-                     <div class=" user-pic" >
-                        <img id="user_photo" src="images/user.png" alt="user photo" style="width:128px;height:130px;">
+         <div class="add-adv-block">
+            <div class="add-adv-form">
+               <h2 class="form-title">
+                 إضافة إعلان (مع إصدار ترخيص)
+               </h2>
+               <form>
+                  <label class="form-label">رقم سجل المنشأة</label>
+                  <input type="number">
+                  <label class="form-label">رقم صك الملكية</label>
+                  <input type="number">
+                  <label class="form-label">اسم المعلن</label>
+                  <input type="text">
+                  <label class="form-label">رقم التواصل للمعلن</label>
+                  <div class="map-input">
+                     <input  id="intTextBox" class="price-input inputs"  placeholder="5xxxxxxxx">
+                     <span class="country">
+                     966+
+                     <img src="images/flag-ar.png" alt="flag">
+                     </span>
+                  </div>
+                  <label class="form-label">رقم رخصة الوساطة والتسويق العقاري</label>
+                  <input type="number">
+                  <label class="form-label extra-label-margin-2">وجود قيد ؟</label>
+                  <div class="checkbox-section mb15">
+                     <div class="radio-button-block first-checkbox-block">
+                        <div class="checkbox radio-check">
+                           <input type="radio" id="yes" name="ristrict" value="نعم" checked>
+                           <label for="yes"> نعم</label>
+                        </div>
+                       
+                       
+                      
+                     </div>
+                     <div class="radio-button-block second-checkbox-block">
+                        <div class="checkbox radio-check">
+                           <input type="radio" id="no"  name="ristrict" value="لا">
+                           <label for="no"> لا</label>
+                        </div>
+                       
+                      
+                       
                      </div>
                   </div>
-                  <ul>
-                     <li><a href="edit-account.html" >تعديل بيانات الحساب</a></li>
-                     <li><a href="edit-password.html" >تعديل بيانات المرور</a></li>
-                     <li><a href="my-orders.html">طلباتي</a></li>
-                     <li><a href="my-adv.html">إعلاناتي</a></li>
-                     <li><a href="my-subscriptions.html">إشتراكاتي</a></li>
-                     <li><a href="favourite.html" class="active">المفضلة</a></li>
-                     <li><a href="notifications.html">الإشعارات</a></li>
-                     <li><a href="chat.html">المحادثات</a></li>
-                     <li><a href="bank-transfer.html">التحويلات البنكية</a></li>
-                     <li><a href="request-contract.html">طلبات توثيق العقود</a></li>
-                     <li><a href="payment-reports.html">نماذج السداد</a></li>
-                     <li><a href="reports.html">البلاغات</a></li>
-                     <li><a href="#">تسجيل خروج</a></li>
-                     <li><a href="#">حذف الحساب</a></li>
-                  </ul>
-               </nav>
-               <div class="my-acc-tabcontent">
+                  <label class="form-label extra-label-margin-2">وجود رهن ؟</label>
+                  <div class="checkbox-section mb15">
+                     <div class="radio-button-block first-checkbox-block">
+                        <div class="checkbox radio-check">
+                           <input type="radio" id="yes-2" name="mortgage" value="نعم" checked>
+                           <label for="yes-2"> نعم</label>
+                        </div>
+                       
+                       
+                      
+                     </div>
+                     <div class="radio-button-block second-checkbox-block">
+                        <div class="checkbox radio-check">
+                           <input type="radio" id="no-2"  name="mortgage" value="لا">
+                           <label for="no-2"> لا</label>
+                        </div>
+                       
+                      
+                       
+                     </div>
+                  </div>
+                  <label class="form-label extra-label-margin">مساحة العقار</label>
+                  <div class="map-input">
+                     <input type="text" class="my-input">
+                     <span>م<sup>2</sup></span>
+                  </div>
+                  <label class="form-label ">عرض الشارع</label>
+                  <div class="map-input">
+                     <input type="text" class="my-input">
+                     <span>م</span>
+                  </div>
+                  <label class="form-label">سعر الوحدة / سعر المتر للأرض</label>
+                  <div class="map-input">
+                     <input type="text" class="my-input">
+                     <span>ريال</span>
+                  </div>
+                  <label class="form-label">نوع العقار</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>اختر من القائمة</option>
+                        <option>اختر من القائمة</option>
+                        <option>اختر من القائمة</option>
+                        <option>اختر من القائمة</option>
+                     </select>
+                  </div>
+                  <label class="form-label">عمر العقار</label>
+                  <input type="text">
+                  <label class="form-label">غرض الإعلان</label>
+                  <input type="text">
+                  <label class="form-label">المنطقة</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>اختر المنطقة</option>
+                        <option>اختر المنطقة</option>
+                        <option>اختر المنطقة</option>
+                        <option>اختر المنطقة</option>
+                     </select>
+                  </div>
+                  <label class="form-label">رقم المنطقة</label>
+                  <input type="text">
+                  <label class="form-label">المدينة</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>اختر المدينة</option>
+                        <option>اختر المدينة</option>
+                        <option>اختر المدينة</option>
+                        <option>اختر المدينة</option>
+                     </select>
+                  </div>
+                  <label class="form-label">رقم المدينة</label>
+                  <input type="text">
+                  <label class="form-label">الحي</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>اختر من القائمة</option>
+                        <option>اختر من القائمة</option>
+                        <option>اختر من القائمة</option>
+                        <option>اختر من القائمة</option>
+                     </select>
+                  </div>
+                  <label class="form-label">رقم الحي</label>
+                  <input type="text">
+                  <label class="form-label">اسم الشارع</label>
+                  <input type="text">
+                  <label class="form-label">الرمز البريدي</label>
+                  <input type="text">
+                  <label class="form-label">رقم المبنى</label>
+                  <input type="number">
+                  <label class="form-label">الرقم الإضافي</label>
+                  <input type="number">
+                  <label class="form-label">خط الطول</label>
+                  <input type="number">
+                  <label class="form-label">خط العرض</label>
+                  <input type="number">
+                  <label class="form-label">واجهة العقار</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>اختر من القائمة</option>
+                        <option>اختر من القائمة</option>
+                        <option>اختر من القائمة</option>
+                        <option>اختر من القائمة</option>
+                     </select>
+                  </div>
+                  <label class="form-label">رقم المخطط</label>
+                  <input type="number">
+                  <label class="form-label">الإلتزامات على العقار</label>
+                  <textarea></textarea>
+                  <label class="form-label">الضمانات ومدتها</label>
+                  <textarea></textarea>
+                  <label class="form-label">حدود وأطوال العقار</label>
+                  <textarea></textarea>
+                  <label class="form-label">مطابقة كود البناء السعودي</label>
+                  <input type="text">
+                  <label class="form-label">قنوات الإعلان</label>
+                  <input type="text">
+                  <label class="form-label">استخدام العقار</label>
+                  <input type="text">
+                  <label class="form-label">خدمات العقار</label>
+                  <textarea></textarea>
+                  <label class="form-label">رابط رمز الإستجابة السريع</label>
+                  <input type="text">
+                  <label class="form-label">الغرف</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                     </select>
+                  </div>
                  
-                  <div  class="item item-2 active">
-                     <div class="item-content">
-                        <h2>
-                           المفضلة
-                        </h2>
-                        <div class="content-section-div cont-sec-div p37">
-                           <div class="home-block">
-                              <button class="fav-btn fav-btn-focused"><i class="lar la-heart"></i></button>
-                              <a href="#">
-                                 <div class="pro-img">
-                                    <figure>
-                                       <img src="images/buildings/01.jpg" alt="building">
-                                    </figure>
-                                 </div>
-                              </a>
-                              <div class="home-details">
-                                 <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
-                                 <ul class="home-discription">
-                                    <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
-                                    <li><i class="las la-bed"></i>5</li>
-                                    <li><i class="las la-couch"></i>2</li>
-                                    <li><i class="las la-bath"></i>5</li>
-                                 </ul>
-                                 <p>1,250,000 ريال</p>
-                                 <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
-                              </div>
-                           </div>
-                           <div class="home-block">
-                              <button class="fav-btn fav-btn-focused"><i class="lar la-heart"></i></button>
-                              <a href="#">
-                                 <div class="pro-img">
-                                    <figure>
-                                       <img src="images/buildings/01.jpg" alt="building">
-                                    </figure>
-                                 </div>
-                              </a>
-                              <div class="home-details">
-                                 <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
-                                 <ul class="home-discription">
-                                    <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
-                                    <li><i class="las la-bed"></i>5</li>
-                                    <li><i class="las la-couch"></i>2</li>
-                                    <li><i class="las la-bath"></i>5</li>
-                                 </ul>
-                                 <p>1,250,000 ريال</p>
-                                 <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
-                              </div>
-                           </div>
-                           <div class="home-block">
-                              <button class="fav-btn fav-btn-focused"><i class="lar la-heart"></i></button>
-                              <a href="#">
-                                 <div class="pro-img">
-                                    <figure>
-                                       <img src="images/buildings/01.jpg" alt="building">
-                                    </figure>
-                                 </div>
-                              </a>
-                              <div class="home-details">
-                                 <a href="post.html">فيلا للبيع في شارع موهوب الجواليقي</a>
-                                 <ul class="home-discription">
-                                    <li><i class="las la-ruler-combined"></i>200 م<sup>2</sup></li>
-                                    <li><i class="las la-bed"></i>5</li>
-                                    <li><i class="las la-couch"></i>2</li>
-                                    <li><i class="las la-bath"></i>5</li>
-                                 </ul>
-                                 <p>1,250,000 ريال</p>
-                                 <span>حي النسيم الشرقي, الرياض, الرياض - منذ 4 أيام</span>
-                              </div>
-                           </div>
+                 
+              
+                  
+                  <label class="form-label">الصالات</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                     </select>
+                  </div>
+                  <label class="form-label">دورات المياه</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                     </select>
+                  </div>
+                  <label class="form-label">المطابخ</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                     </select>
+                  </div>
+                  <label class="form-label">عدد المداخل</label>
+                  <div class="select-wrapper-2">
+                     <select>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                        <option>1</option>
+                     </select>
+                  </div>
+                  <label class="form-label">نوعية البناء</label>
+                  <input type="text">
+                  <label class="form-label">عمر العقار</label>
+                  <input type="text">
+                  <label class="form-label">الوصف</label>
+                  <textarea></textarea>
+                  <label class="form-label extra-label-margin-2">الملحقات</label>
+                  <div class="checkbox-section">
+                     <div class="checkbox-block first-checkbox-block">
+                        <div class="checkbox">
+                           <input type="checkbox" id="stairs" name="درج داخلي" value="">
+                           <label for="stairs"> درج داخلي</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="maid" name="غرفة خادمة" value="">
+                           <label for="maid"> غرفة خادمة</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="launge"  name="فناء داخلي" value="">
+                           <label for="launge"> فناء داخلي</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="evaluater"  name="مصعد" value="">
+                           <label for="evaluater"> مصعد</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="chairs" name="ديوانية خارجية" value="">
+                           <label for="chairs"> ديوانية خارجية</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="water"  name="توافر خدمات المياه  " value="">
+                           <label for="water"> توافر خدمات المياه</label>
+                        </div>
+                     </div>
+                     <div class="checkbox-block second-checkbox-block">
+                        <div class="checkbox">
+                           <input type="checkbox" id="driver" name="غرفة سائق" value="">
+                           <label for="driver"> غرفة سائق</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="upstairs" name="ملحق علوي" value="">
+                           <label for="upstairs"> ملحق علوي</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="car"  name="مدخل سيارة" value="">
+                           <label for="car"> مدخل سيارة</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="tent"  name="بيت شعر" value="">
+                           <label for="tent"> بيت شعر / خيمة</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="pool"  name="مسبح" value="">
+                           <label for="pool"> مسبح</label>
+                        </div>
+                        <div class="checkbox">
+                           <input type="checkbox" id="electricity"  name="توافر خدمات الكهرباء" value="">
+                           <label for="electricity"> توافر خدمات الكهرباء</label>
                         </div>
                      </div>
                   </div>
-                 
-                  
-                 
-                
-               </div>
-            </article>
+                  <a href="order-preview.html" class="submit-adv">متابعة</a>
+               </form>
+            </div>
          </div>
-         <!-- my-account-section -->
       </div>
       <!-- content-section -->
       <!-- footer section -->
@@ -422,23 +569,16 @@
       <!-- mobile show icons -->
       <div class="mobile-show-icons fixed-bottom">
          <div class="container">
-            <ul class="mobile-icons mobile-icons-2">
+            <ul class="mobile-icons">
                <li>
                   <a href="add-adv-1.html" class="link-adv-btn add-adv-btn">
                   <i class="las la-plus"></i> إضافة إعلان
                   </a>
                </li>
                <li>
-                  <a href="#" class="sign dropbtn m0">
-                     <i class="las la-bell"></i>
-                     <span class="notification"></span>
-                     <p>الإشعارات</p>
-                  </a>
-               </li>
-               <li>
-                  <a href="edit-account.html" class="sign dropbtn">
+                  <a href="sign-in.html" class="sign dropbtn">
                   <i class="las la-user icon"></i>
-                  <span>حسابي</span>
+                  <span>تسجيل دخول</span>
                   </a>
                </li>
                <li>

@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>the virtual marketer/ add advertisement </title>
+      <title>the virtual marketer/ my account </title>
       <link rel="icon" href="images/fav.png" type="image/png" />
       <link rel="stylesheet" href="css/all.min.css" />
       <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -28,7 +28,7 @@
       <header class="fixed-top">
          <div class="search-bar ">
             <figure class="img-logo">
-               <a href="index-en.html"><img src="images/logo.png" class="img-fluid" /></a>
+               <a href="index-en.html"><img src="images/logo.png" class="img-fluid" alt="logo" /></a>
             </figure>
             <div class="search-select-part">
                <div class="search-section" id="search-icon">
@@ -58,7 +58,7 @@
                <div class="lang-section">
                   <div class="dropdown">
                      <div class="lang-word ">
-                        <a href="index.html" class="language-anchor">العربية</a>
+                        <a href="my-orders.html" class="language-anchor">العربية</a>
                      </div>
                   </div>
                </div>
@@ -155,195 +155,152 @@
                   <a class="bread-link bread-home aFixx" href="index.html">home</a>
                </li>
                <li class="active item-23">
-                  <span class="bread-current">add advertisement </span>
+                  <span class="bread-current">my account </span>
                </li>
             </ol>
          </div>
          <!-- end breadcrumb section -->
-         <!-- price-section -->
-         <div class="price-section">
-            <div class="price-content">
-               <h2 class="form-title mb20">
-                  Advertising fees
-               </h2>
-               <span class="note mb18">
-               Select your account type to view the fees payable
-               </span>
-               <ul class="nav nav-pills  price-tabs" id="pills-tab" role="tablist">
-                  <li class="nav-item">
-                     <a class="nav-link active" id="pills-owner-tab" data-toggle="pill" href="#pills-owner" role="tab" aria-controls="pills-owner" aria-selected="true">property owner</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="pills-sales-tab" data-toggle="pill" href="#pills-sales" role="tab" aria-controls="pills-sales" aria-selected="false">Real estate agent / marketer</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="pills-office-tab" data-toggle="pill" href="#pills-office" role="tab" aria-controls="pills-office" aria-selected="false">Office / real estate developer</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" id="pills-company-tab" data-toggle="pill" href="#pills-company" role="tab" aria-controls="pills-company" aria-selected="false">Real estate company</a>
-                  </li>
-               </ul>
-               <div class="tab-content" id="pills-tabContent">
-                  <div class="tab-pane fade show active" id="pills-owner" role="tabpanel" aria-labelledby="pills-owner-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              selling fee
-                           </p>
-                           <span>
-                           299 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              Monthly rental fee
-                           </p>
-                           <span>
-                           99 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              daily rental fee
-                           </p>
-                           <span>
-                           29 r.s
-                           </span>
-                        </div>
+         <!-- my-account-section -->
+         <div class="my-account-section">
+            <article class="tabbed-content tabs-side">
+               <nav class="tabs">
+                  <div class="upload__btn-box user-img">
+                     <label class="upload__btn upload-personal-img"  >
+                     <i class="las la-camera"></i>
+                     <input type="file" class="upload__inputfile " accept="image/*" id="imgpath">
+                     </label>
+                     <div class=" user-pic" >
+                        <img id="user_photo" src="images/user.png" alt="user photo" style="width:128px;height:130px;">
                      </div>
-                     <span class="pay-note">
-                     Fees are paid only after selling or renting the property.
-                     </span>
-                     <span class="pay-note mb22">
-                     Fees apply to any transaction performed by a customer who reached you through the application, even if the property is not displayed in the application.
-                     </span>
-                     <a href="adv-type-en.html">
-                     <button class="accept-btn">
-                     I undertake to pay the fee
-                     </button>
-                     </a>
                   </div>
-                  <div class="tab-pane fade" id="pills-sales" role="tabpanel" aria-labelledby="pills-sales-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              selling fee
-                           </p>
-                           <span>
-                           299 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              Monthly rental fee
-                           </p>
-                           <span>
-                           99 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              daily rental fee
-                           </p>
-                           <span>
-                           29 r.s
-                           </span>
+                  <ul>
+                     <li><a href="edit-account-en.html" >Edit Account Information</a></li>
+                     <li><a href="edit-password-en.html" >Modify login data</a></li>
+                     <li><a href="my-orders-en.html" class="active">my orders</a></li>
+                     <li><a href="my-adv-en.html">my advertisements</a></li>
+                     <li><a href="my-subscriptions-en.html">my subscriptions</a></li>
+                     <li><a href="favourite-en.html">favourite</a></li>
+                     <li><a href="notifications-en.html" >notifications</a></li>
+                     <li><a href="chat-en.html">chat</a></li>
+                     <li><a href="bank-transfer-en.html">bank transfer</a></li>
+                     <li><a href="request-contract-en.html">Requests for documentation of contracts</a></li>
+                     <li><a href="payment-reports-en.html">payment reports</a></li>
+                     <li><a href="reports-en.html">reports</a></li>
+                     <li><a href="#">sign out</a></li>
+                     <li><a href="#">delete account</a></li>
+                  </ul>
+               </nav>
+               <div class="my-acc-tabcontent">
+               
+                  <div  class="item item-2 active">
+                     <div class="item-content">
+                        <h2>
+                          my orders
+                        </h2>
+                        <div class="notifications p37">
+                           <a href="order-details-en.html" class="order-block">
+                              <div class="notification-block ">
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                  order no.
+                                    </label>
+                                    <span class="type">
+                                    #123
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                 order type
+                                    </label>
+                                    <span class="type">
+                                       Announcement with the issuance of a license
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                   order status
+                                    </label>
+                                    <span class="type">
+                                       Under payment
+                                    </span>
+                                 </div>
+                                
+                              </div>
+                           </a>
+                           
+                           <a href="order-details-en.html" class="order-block">
+                              <div class="notification-block ">
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                  order no.
+                                    </label>
+                                    <span class="type">
+                                    #123
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                 order type
+                                    </label>
+                                    <span class="type">
+                                       Announcement with the issuance of a license
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                   order status
+                                    </label>
+                                    <span class="type">
+                                       Under payment
+                                    </span>
+                                 </div>
+                                
+                              </div>
+                           </a>
+
+                           <a href="order-details-en.html" class="order-block">
+                              <div class="notification-block ">
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                  order no.
+                                    </label>
+                                    <span class="type">
+                                    #123
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                 order type
+                                    </label>
+                                    <span class="type">
+                                       Announcement with the issuance of a license
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                   order status
+                                    </label>
+                                    <span class="type">
+                                       Under payment
+                                    </span>
+                                 </div>
+                                
+                              </div>
+                           </a>
+                           
+                          
+                         
                         </div>
                      </div>
-                     <span class="pay-note">
-                     Fees are paid only after selling or renting the property.
-                     </span>
-                     <span class="pay-note mb22">
-                     Fees apply to any transaction performed by a customer who reached you through the application, even if the property is not displayed in the application.
-                     </span>
-                     <a href="adv-type-en.html">
-                     <button class="accept-btn">
-                     I undertake to pay the fee
-                     </button>
-                     </a>
                   </div>
-                  <div class="tab-pane fade" id="pills-office" role="tabpanel" aria-labelledby="pills-office-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              selling fee
-                           </p>
-                           <span>
-                           299 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              Monthly rental fee
-                           </p>
-                           <span>
-                           99 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              daily rental fee
-                           </p>
-                           <span>
-                           29 r.s
-                           </span>
-                        </div>
+                 
+                   
                      </div>
-                     <span class="pay-note">
-                     Fees are paid only after selling or renting the property.
-                     </span>
-                     <span class="pay-note mb22">
-                     Fees apply to any transaction performed by a customer who reached you through the application, even if the property is not displayed in the application.
-                     </span>
-                     <a href="adv-type-en.html">
-                     <button class="accept-btn">
-                     I undertake to pay the fee
-                     </button>
-                     </a>
-                  </div>
-                  <div class="tab-pane fade" id="pills-company" role="tabpanel" aria-labelledby="pills-company-tab">
-                     <div class="prices-list">
-                        <div class="price-block">
-                           <p>
-                              selling fee
-                           </p>
-                           <span>
-                           299 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              Monthly rental fee
-                           </p>
-                           <span>
-                           99 r.s
-                           </span>
-                        </div>
-                        <div class="price-block">
-                           <p>
-                              daily rental fee
-                           </p>
-                           <span>
-                           29 r.s
-                           </span>
-                        </div>
-                     </div>
-                     <span class="pay-note">
-                     Fees are paid only after selling or renting the property.
-                     </span>
-                     <span class="pay-note mb22">
-                     Fees apply to any transaction performed by a customer who reached you through the application, even if the property is not displayed in the application.
-                     </span>
-                     <a href="adv-type-en.html">
-                     <button class="accept-btn">
-                     I undertake to pay the fee
-                     </button>
-                     </a>
                   </div>
                </div>
-            </div>
+            </article>
          </div>
-         <!-- price-section -->
+         <!-- my-account-section -->
       </div>
       <!-- content-section -->
       <!-- footer section -->
