@@ -914,6 +914,9 @@ html[dir="rtl"] .search-button i{
   .advanced-search-btn{
     display: none;
   }
+  .pp0{
+    padding: 37px 0  73px!important;
+  }
   .mobile-show-icons .advanced-search-btn{
     display: flex;
     flex-wrap: wrap;
@@ -4412,7 +4415,7 @@ font-size: 14px;
 .width100{
   width: 100%;
  
-  margin-bottom: 18px !important;
+  margin-bottom: 10px !important;
 }
 .width100 .type{
   margin-bottom: 0 !important;
