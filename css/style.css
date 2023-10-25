@@ -2534,16 +2534,65 @@ color: var(--sec-color);
 .bank-transfer-note{
   font-size: 16px;
   color: var(--main-color);
-  text-align: center;
-  max-width: 700px;
- margin-bottom: 28px;
+  
+ margin-bottom: 10px;
  display: block;
-  align-self: center;
+ font-family: "Cairo-Bold";
+}
+.pay-note-2{
+  text-align: center;
+  font-size: 16px;
+  color: var(--main-color);
+  margin-top: 30px;
+ margin-bottom: 18px;
+ display: block;
 }
 .mb9{
   margin-bottom: 9px !important;
 }
-
+.payment-type-block{
+  min-height: 45px !important;
+  padding: 12px 22px !important;
+  width: 360px !important;
+ 
+}
+.payment-type-radio{
+  width: auto !important;
+  height: auto !important;
+  padding: 0 !important;
+}
+.w555{
+  width: 555px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pay-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.pay-form label{
+  align-items: flex-start;
+  display: flex;
+  width: 360px;
+}
+.pay-form input{
+  width: 360px !important;
+}
+.w360{
+  width: 360px !important;
+}
+.fs14{
+  font-size: 14px !important;
+}
+.pay-methods{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
 
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -3011,6 +3060,24 @@ ol.breadcrumb li:not(.active):after {
   .notification-block{
     padding-inline-start: 20px;
     padding-inline-end: 20px;
+  }
+  .w360{
+    width: 100% !important;
+  }
+  .payment-type-block{
+    width: 100% !important;
+  }
+  .pay-note-2{
+    margin-top: 15px;
+  }
+  .pay-form label{
+    width: 100%;
+  }
+  .pay-form input{
+    width: 100% !important;
+  }
+  .date-input{
+    width: 100%;
   }
   .subscription-banner{
     flex-wrap: wrap;
@@ -4750,6 +4817,38 @@ margin-inline-end: 2px;
 /*                            facilities-subscriptions                                 */
 
 
+/*                 broker-search                                         */
+.form-roww{
+  display: flex;
+  justify-content: space-between;
+}
+.mb47{
+  margin-bottom: 47px !important;
+}
+.broker-input{
+  width: 320px;
+}
+.broker-btn{
+  width: 105px;
+  height: 40px;
+  font-size: 14px;
+  color: #fff;
+}
+.broker-btn i{
+  margin-inline-end: 5px;
+}
+.broker-table .table thead th:last-child{
+text-align: start;
+}
+html[dir="ltr"] .broker-section .form-label{
+  height: 42px;
+}
+.m37{
+  margin-inline-end: 37px;
+}
+/*                  broker-search                                */
+
+
 
 
 /*                                    media query                                    */
@@ -4761,6 +4860,21 @@ margin-inline-end: 2px;
     padding: 20px;
     font-size: 15px;
     padding-inline-end: 20px;
+  }
+  .m37{
+    margin-inline-end: 0;
+  }
+  .form-roww{
+    flex-wrap: wrap;
+  }
+  html[dir="ltr"] .broker-section .form-label {
+    height: auto;
+}
+  .broker-input{
+    width: 100%;
+  }
+  .broker-btn{
+    display: block !important;
   }
   .payment-radio-btns{
     flex-wrap: wrap;
@@ -5090,6 +5204,9 @@ margin-inline-end: 2px;
 @media only screen and (max-width: 994px)  and (min-width: 768px)  {
   .order-label{
     margin-inline-end: 5px !important;
+  }
+  .w555{
+    width: 555px !important;
   }
   html[dir="ltr"]  .order-note{
     width: 335px;

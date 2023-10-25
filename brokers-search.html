@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>المسوق الإفتراضي / اشتراكات المنشآت</title>
+      <title>المسوق الإفتراضي / استعلام عن وسيط عقاري</title>
       <link rel="icon" href="images/fav.png" type="image/png" />
       <link rel="stylesheet" href="css/all.min.css" />
       <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -58,7 +58,7 @@
             <div class="lang-part mobile-lang-part">
                <div class="lang-section">
                   <div class="lang-word ">
-                     <a href="facilities-payment-en.html" class="language-anchor">English</a>
+                     <a href="brokers-search-en.html" class="language-anchor">English</a>
                   </div>
                </div>
                <a href="#" class="sign dropbtn m0">
@@ -157,88 +157,135 @@
                   <a class="bread-link bread-home aFixx" href="index.html">الرئيسية</a>
                </li>
                <li class="active item-23">
-                  <span class="bread-current">اشتراكات المنشآت</span>
+                  <span class="bread-current">استعلام عن وسيط عقاري</span>
                </li>
             </ol>
          </div>
          <!-- end breadcrumb section -->
          <!-- terms-section -->
          <div class="terms-section">
-            <h2 class="form-title mb20">
-               اشتراكات المنشآت
+            <h2 class="form-title mb40">
+               استعلام عن وسيط عقاري
             </h2>
-           <div class="title-bar-2">
-            <i class="las la-credit-card card-icon"></i>
-                طريقة الدفع
-           </div>
-           <div class="payment-radio-btns">
-            <div class="payment-block">
-               <label class="adv-type-block adv-payment-block">
-                  <input type="radio" class="adv-type-radio" name="adv type">
-                  <img class="adv-payment-icon" src="images/bank-photos/05.jpg" alt="adv payment icon">
-                  
-                  <span class="checkmark"></span>
-                </label>
-                <span class="payment-name">
-                  فيزا
-                </span>
+            <div class="add-adv-form width100 mb47">
+               <form>
+                  <div class="form-roww">
+                     <div class="broker-input">
+                        <label class="form-label">رقم رخصة الوسيط</label>
+                  <input type="number">
+                     </div>
+                     <div class="broker-input">
+                        <label class="form-label">اسم الوسيط فرد/منشأة</label>
+                  <input type="text">
+                     </div>
+                     <div class="broker-input">
+                        <label class="form-label">رقم الهوية للفرد / الرقم الموحد للمنشأة</label>
+                  <input type="number">
+                     </div>
+                  </div>
+
+                  <div class="form-roww">
+                     <div class="broker-input">
+                        <label class="form-label">المنطقة</label>
+                        <div class="select-wrapper-2">
+                           <select>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="broker-input">
+                        <label class="form-label">المدينة</label>
+                        <div class="select-wrapper-2">
+                           <select>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="broker-input">
+                        <label class="form-label">الحي</label>
+                        <div class="select-wrapper-2">
+                           <select>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                              <option>اختر من القائمة</option>
+                           </select>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="search-button broker-btn">
+                     <i class="las la-search"></i>
+                    استعلم
+                     </button>
+               </form>
             </div>
-            <div class="payment-block">
-               <label class="adv-type-block adv-payment-block">
-                  <input type="radio" class="adv-type-radio" name="adv type">
-                  <img class="adv-payment-icon" src="images/bank-photos/06.jpg" alt="adv payment icon">
-                  
-                  <span class="checkmark"></span>
-                </label>
-                <span class="payment-name">
-                  ماستركارد
-                </span>
-            </div>
+          
            
-            <div class="payment-block">
-               <label class="adv-type-block adv-payment-block">
-                  <input type="radio" class="adv-type-radio" name="adv type">
-                  <img class="adv-payment-icon" src="images/bank-photos/07.jpg" alt="adv payment icon">
-                  
-                  <span class="checkmark"></span>
-                </label>
-                <span class="payment-name">
-                  مدى
-                </span>
+            <div class="bank-transfer-table broker-table">
+               <table class="table table-striped">
+                  <thead>
+                     <tr>
+                        <th scope="col">نوع الوسيط</th>
+                        <th scope="col">اسم الوسيط</th>
+                        <th scope="col">المدينة</th>
+                        <th scope="col">الحي</th>
+                        
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>وسيط منشأة</td>
+                        <td>شركة عقارنا العقارية</td>
+                        <td>عنيزة</td>
+                        <td>الفاخرية</td>
+                        
+                     </tr>
+                     <tr>
+                        <td>وسيط منشأة</td>
+                        <td>شركة عقارنا العقارية</td>
+                        <td>عنيزة</td>
+                        <td>الفاخرية</td>
+                        
+                     </tr>
+                     <tr>
+                        <td>وسيط منشأة</td>
+                        <td>شركة عقارنا العقارية</td>
+                        <td>عنيزة</td>
+                        <td>الفاخرية</td>
+                        
+                     </tr>
+                     <tr>
+                        <td>وسيط منشأة</td>
+                        <td>شركة عقارنا العقارية</td>
+                        <td>عنيزة</td>
+                        <td>الفاخرية</td>
+                        
+                     </tr>
+                     <tr>
+                        <td>وسيط منشأة</td>
+                        <td>شركة عقارنا العقارية</td>
+                        <td>عنيزة</td>
+                        <td>الفاخرية</td>
+                        
+                     </tr>
+                     <tr>
+                        <td>وسيط منشأة</td>
+                        <td>شركة عقارنا العقارية</td>
+                        <td>عنيزة</td>
+                        <td>الفاخرية</td>
+                        
+                     </tr>
+                    
+                   
+                  </tbody>
+               </table>
             </div>
-           
-           
-           
-           </div>
-           <div class="payment-details">
-            <div class="payment-details-row">
-               <span class="payment-details-text">
-                  تكلفة الطلب
-               </span>
-               <span class="payment-details-text">
-                 100 ر.س
-               </span>
-            </div>
-            <div class="payment-details-row">
-               <span class="payment-details-text">
-                  ضريبة القيمة المضافة
-               </span>
-               <span class="payment-details-text">
-                 15 ر.س
-               </span>
-            </div>
-            <div class="payment-details-row">
-               <span class="payment-details-text-2">
-                 إجمالي المستحق
-               </span>
-               <span class="payment-details-text-2">
-                 115 ر.س
-               </span>
-            </div>
-           </div>
-            <a href="add-adv-2.html" class="accept-btn pay-btn">
-           دفع
-            </a>
          </div>
          <!-- terms-section -->
       </div>

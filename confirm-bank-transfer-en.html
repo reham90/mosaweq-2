@@ -4,7 +4,7 @@
       <meta charset="utf-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>the virtual marketer/ confirm bank transfer</title>
+      <title>the virtual marketer/ Fees payment form</title>
       <link rel="icon" href="images/fav.png" type="image/png" />
       <link rel="stylesheet" href="css/all.min.css" />
       <link rel="stylesheet" href="css/line-awesome.min.css" />
@@ -134,37 +134,70 @@
                   <a class="bread-link bread-home aFixx" href="index.html">home</a>
                </li>
                <li class="active item-23">
-                  <span class="bread-current">confirm bank transfer</span>
+                  <span class="bread-current">Fees payment form</span>
                </li>
             </ol>
          </div>
          <!-- end breadcrumb section -->
          <div class="add-adv-block">
             <h2 class="form-title mb18">
-               confirm bank transfer
+               Fees payment form
             </h2>
-            <span class="bank-transfer-note">
-            You can send the value of the fees to the bank accounts shown at the bottom of the page, then send the transfer data via the following form to confirm the transfer
-            </span>
-            <div class="add-adv-form">
-               <form>
-                  <input type="text" class="mb9" placeholder="bank account owner name">
-                  <input type="text" class="mb9" placeholder="advertisement no.">
-                  <input type="text" class="mb9" placeholder="account no.">
-                  <input type="text" class="mb9" placeholder="bank">
+           
+            <div class="add-adv-form w555">
+               <span class="bank-transfer-note">
+                  Select payment method
+                   </span>
+                   <label class="adv-type-block payment-type-block">
+                     <input type="radio" class="adv-type-radio payment-type-radio" name="payment type">
+                     
+                     <div class="adv-type-text">
+                        <h3 class="adv-type-title fs14">
+                           Bank transfer
+                        </h3>
+                       
+                     </div>
+                     <span class="checkmark"></span>
+                   </label>
+                   <label class="adv-type-block payment-type-block">
+                     <input type="radio" class="adv-type-radio payment-type-radio" name="payment type">
+                     
+                     <div class="adv-type-text pay-methods">
+                        <h3 class="adv-type-title fs14">
+                           Electronic payment
+                        </h3>
+                       <img src="images/pay.png" alt="payment methods">
+                     </div>
+                     <span class="checkmark"></span>
+                   </label>
+
+                   <span class="pay-note-2">
+                     You can send the fees to the bank accounts shown at the bottom of the page
+                     Then send the transfer data via the following form to confirm the transfer
+                   </span>
+               <form class="pay-form">
+                  <label class="form-label">Name of bank account holder</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">advertisement number</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">account number</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">bank</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">date and time of transfer</label>
                   <div class="map-input date-input">
-                     <input type="date" class="date-input">
+                     <input type="date" class="date-input mb9" >
                      <i class="las la-calendar"></i>
                   </div>
-                  <input type="text" class="mb9" placeholder="transfered money">
+                  <label class="form-label">transfered money</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">transfer reciept</label>
                   <div class="upload__box">
                      <div class="upload__btn-box">
                         <label class="upload__btn" id="file" for="customFile">
-                       <span class="label-text">
-                        transfer receipt
-                       </span>
-                        <b class="upload-images"> upload file</b>
-                        <input type="file"  class="upload__inputfile" id="customFile">
+                        
+                        <b class="upload-images">upload file</b>
+                        <input type="file"  class="upload__inputfile" id="customFile" >
                         </label>
                      </div>
                      <div class="upload__img-wrap"></div>

@@ -58,7 +58,7 @@
             <div class="lang-part mobile-lang-part">
                <div class="lang-section">
                   <div class="lang-word ">
-                     <a href="index-en.html" class="language-anchor">English</a>
+                     <a href="confirm-bank-transfer-en.html" class="language-anchor">English</a>
                   </div>
                </div>
                <a href="sign-in.html" class="sign dropbtn">
@@ -138,35 +138,68 @@
                   <a class="bread-link bread-home aFixx" href="index.html">الرئيسية</a>
                </li>
                <li class="active item-23">
-                  <span class="bread-current">تأكيد التحويلات البنكية</span>
+                  <span class="bread-current">نموذج سداد رسوم</span>
                </li>
             </ol>
          </div>
          <!-- end breadcrumb section -->
          <div class="add-adv-block">
             <h2 class="form-title mb18">
-               تأكيد التحويلات البنكية
+              نموذج سداد رسوم
             </h2>
-            <span class="bank-transfer-note">
-            يمكنك إرسال قيمة الرسوم على الحسابات البنكية الموضحة أسفل الصفحة, ثم إرسال بيانات التحويل عبر النموذج التالي لتأكيد التحويل
-            </span>
-            <div class="add-adv-form">
-               <form>
-                  <input type="text" class="mb9" placeholder="اسم صاحب الحساب البنكي">
-                  <input type="text" class="mb9" placeholder="رقم الإعلان">
-                  <input type="text" class="mb9" placeholder="رقم الحساب">
-                  <input type="text" class="mb9" placeholder="البنك">
+           
+            <div class="add-adv-form w555">
+               <span class="bank-transfer-note">
+                  حدد طريقة الدفع
+                   </span>
+                   <label class="adv-type-block payment-type-block">
+                     <input type="radio" class="adv-type-radio payment-type-radio" name="payment type">
+                     
+                     <div class="adv-type-text">
+                        <h3 class="adv-type-title fs14">
+                         تحويل بنكي
+                        </h3>
+                       
+                     </div>
+                     <span class="checkmark"></span>
+                   </label>
+                   <label class="adv-type-block payment-type-block">
+                     <input type="radio" class="adv-type-radio payment-type-radio" name="payment type">
+                     
+                     <div class="adv-type-text pay-methods">
+                        <h3 class="adv-type-title fs14">
+                         دفع إلكتروني
+                        </h3>
+                       <img src="images/pay.png" alt="payment methods">
+                     </div>
+                     <span class="checkmark"></span>
+                   </label>
+
+                   <span class="pay-note-2">
+                     يمكنك إرسال قيمة الرسوم على الحسابات البنكية الموضحة أسفل الصفحة
+                     ثم إرسال بيانات التحويل عبر النموذج التالي لتأكيد التحويل
+                   </span>
+               <form class="pay-form">
+                  <label class="form-label">اسم صاحب الحساب البنكي</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">رقم الإعلان</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">رقم الحساب</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">البنك</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">تاريخ ووقت التحويل</label>
                   <div class="map-input date-input">
                      <input type="date" class="date-input mb9" >
                      <i class="las la-calendar"></i>
                   </div>
-                  <input type="text" class="mb9" placeholder="المبلغ المحول">
+                  <label class="form-label">المبلغ المحول</label>
+                  <input type="text" class="mb9" >
+                  <label class="form-label">إيصال التحويل</label>
                   <div class="upload__box">
                      <div class="upload__btn-box">
                         <label class="upload__btn" id="file" for="customFile">
-                        <span class="label-text">
-                           إيصال التحويل
-                        </span>
+                        
                         <b class="upload-images">رفع ملف</b>
                         <input type="file"  class="upload__inputfile" id="customFile" >
                         </label>
