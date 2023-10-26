@@ -2064,10 +2064,19 @@ color: var(--sec-color);
   background-color: #4f8fc0;
 }
 .delete-adv-btn{
-  background-color: #c0c1c2;
+  background-color: #c0c1c2 !important;
 }
 .delete-adv-btn:hover{
-  background-color: #f93c3c ;
+  background-color: #f93c3c !important ;
+}
+.progress-btns{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.progress-btns .delete-adv-btn{
+  margin-inline-end: 10px !important;
 }
 #side_tab4 .content-section-div{
   padding-bottom: 65px ;
@@ -2227,7 +2236,7 @@ flex-wrap: wrap;
   display: flex;
 }
 .notification-block p{
-  margin: 0 0 20px;
+  margin: 0 0 14px;
   color: #4d4d4d;
   font-size: 14px;
   text-align: start;
@@ -2238,6 +2247,38 @@ flex-wrap: wrap;
   color: #999;
   font-size: 14px;
   font-family: "Cairo-SemiBold";
+  margin-bottom: 14px;
+}
+.notification-btns{
+  display: flex;
+  align-items: center;
+}
+.notification-btns a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-family: "Cairo-Bold";
+  width: 90px;
+  height: 34px;
+  transition: 0.5s;
+}
+.accept-btnn{
+  background-color: #6bc356;
+  margin-inline-end: 10px;
+}
+.notification-btns a:hover{
+  opacity: 0.7;
+}
+.progress-btn{
+  background-color: var(--main-color) !important;
+}
+.progress-btn:hover{
+  background-color: var(--main-hover) !important;
+}
+.refuse-btn{
+  background-color: #f63d3b;
 }
 .notifications{
   display: flex;
@@ -3063,6 +3104,10 @@ ol.breadcrumb li:not(.active):after {
   .notification-block{
     padding-inline-start: 20px;
     padding-inline-end: 20px;
+  }
+  .progress-btns .delete-adv-btn{
+    margin-inline-end: 0 !important;
+    margin-bottom: 10px !important;
   }
   .w360{
     width: 100% !important;
@@ -4531,6 +4576,7 @@ margin-inline-end: 10px;
   color: var(--main-color);
   font-size: 18px;
   line-height: 1.667;
+  display: block;
 }
 .payment-modal-dialog{
   max-width: 555px;

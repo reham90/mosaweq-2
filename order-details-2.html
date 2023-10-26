@@ -58,7 +58,7 @@
             <div class="lang-part mobile-lang-part">
                <div class="lang-section">
                   <div class="lang-word ">
-                     <a href="my-orders-en.html" class="language-anchor">English</a>
+                     <a href="order-details-2-en.html" class="language-anchor">English</a>
                   </div>
                </div>
                <a href="#" class="sign dropbtn m0">
@@ -73,8 +73,9 @@
                   <div class="dropdown-content">
                      <a href="edit-account.html">تعديل بيانات الحساب</a>
                      <a href="edit-password.html">تعديل بيانات المرور</a>
+                     <li><a href="my-orders.html">طلباتي</a></li>
                      <a href="my-adv.html">إعلاناتي</a>
-                  
+                    
                      <a href="favourite.html">المفضلة</a>
                      <a href="notifications.html">الإشعارات</a>
                      <a href="chat.html">المحادثات</a>
@@ -185,7 +186,7 @@
                      <li><a href="favourite.html">المفضلة</a></li>
                      <li><a href="notifications.html" >الإشعارات</a></li>
                      <li><a href="chat.html">المحادثات</a></li>
-                     
+                    
                      <li><a href="request-contract.html">طلبات توثيق العقود</a></li>
                      <li><a href="payment-reports.html">نماذج السداد</a></li>
                      <li><a href="reports.html">البلاغات</a></li>
@@ -197,12 +198,49 @@
                  
                   <div  class="item item-2 active">
                      <div class="item-content">
-                        <h2>
-                         طلباتي
-                        </h2>
+                        <div class="bank-transfer-title">
+                           <h2>
+                             تفاصيل الطلب #123
+                           </h2>
+                         
+                           <button type="button" class=" transfer-btn progress-btn" data-toggle="modal" data-target="#staticBackdrop">
+                             تم التنفيذ
+                            </button>
+                                          <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered payment-modal-dialog">
+     <div class="modal-content payment-modal-content">
+       <div class="modal-header p0">
+         <h5 class="modal-title fs22 mb18" id="staticBackdropLabel">نشر الإعلان</h5>
+         
+       </div>
+       <div class="modal-body p0">
+       <span class="publish-note mb20">
+         ادخل رقم الترخيص لتتمكن من نشر الإعلان
+       </span>
+       <div class="add-adv-form m-auto">
+         <form>
+            <input type="number" placeholder="رقم الترخيص">
+         </form>
+       </div>
+       </div>
+       <div class="modal-footer payment-modal-footer p0 progress-btns">
+         <a href="#" class="payment-btn modal-payment-btn delete-adv-btn m-0">
+           إلغاء
+            </a>
+         <a href="#" class="payment-btn modal-payment-btn m-0">
+            متابعة
+            </a>
+       </div>
+     </div>
+   </div>
+ </div>
+                           </div>
+                       
                         <div class="notifications p37">
-                           <a href="order-details-2.html" class="order-block">
-                              <div class="notification-block ">
+                           <div class="order-detail-1">
+
+                         
                                  <div class="my-acc-form-block width100">
                                     <label class="order-label">
                                    رقم الطلب
@@ -217,6 +255,14 @@
                                     </label>
                                     <span class="type">
                                    إعلان مع إصدار ترخيص
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label">
+                                 تكلفة الطلب
+                                    </label>
+                                    <span class="type">
+                                  115 ريال
                                     </span>
                                  </div>
                                  <div class="my-acc-form-block width100">
@@ -227,69 +273,364 @@
                                    قيد التنفيذ
                                     </span>
                                  </div>
-                                
                               </div>
-                           </a>
-                          
-                           <a href="order-details.html" class="order-block">
-                              <div class="notification-block ">
+                             
+                              <h2 class="fs20">
+                                تفاصيل الإعلان
+                                 </h2>
                                  <div class="my-acc-form-block width100">
-                                    <label class="order-label">
-                                   رقم الطلب
+                                    <label class="order-label w263">
+                                  رقم سجل المنشأة
                                     </label>
                                     <span class="type">
-                                    #123
+                                   1010254781
                                     </span>
                                  </div>
                                  <div class="my-acc-form-block width100">
-                                    <label class="order-label">
-                                  نوع الطلب
+                                    <label class="order-label w263">
+                                  رقم صك الملكية
                                     </label>
                                     <span class="type">
-                                   إعلان مع إصدار ترخيص
+                                  20152747
                                     </span>
                                  </div>
                                  <div class="my-acc-form-block width100">
-                                    <label class="order-label">
-                                   حالة الطلب
+                                    <label class="order-label w263">
+                                 اسم المعلن
                                     </label>
                                     <span class="type">
-                                   قيد السداد
+                                 خالد عاصم
                                     </span>
                                  </div>
+
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                 رقم التواصل للمعلن
+                                    </label>
+                                    <span class="type">
+                                 0540000000
+                                    </span>
+                                 </div>
+
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                 رقم رخصة الوساطة والتسويق العقاري
+                                    </label>
+                                    <span class="type">
+                                 21548410
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                وجود قيد
+                                    </label>
+                                    <span class="type">
+                                نعم
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                وجود رهن
+                                    </label>
+                                    <span class="type">
+                               لا
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               عرض الشارع 
+                                    </label>
+                                    <span class="type">
+                                 20
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               مساحة العقار
+                                    </label>
+                                    <span class="type">
+                              350 م <sup>2</sup>
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                سعر الوحدة / سعر المتر للأرض 
+                                    </label>
+                                    <span class="type">
+                                250000 ريال
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               نوع العقار
+                                    </label>
+                                    <span class="type">
+                               فيلا
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                عمر العقار
+                                    </label>
+                                    <span class="type">
+                                10 سنوات
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                غرض الإعلان
+                                    </label>
+                                    <span class="type">
+                                البيع
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                المنطقة
+                                    </label>
+                                    <span class="type">
+                               الرياض
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                رقم المنطقة 
+                                    </label>
+                                    <span class="type">
+                                16251
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                المدينة
+                                    </label>
+                                    <span class="type">
+                                الرياض
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                 رقم المدينة 
+                                    </label>
+                                    <span class="type">
+                                16251
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                الحي
+                                    </label>
+                                    <span class="type">
+                                الملز
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               رقم الحي
+                                    </label>
+                                    <span class="type">
+                                1458
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                اسم الشارع
+                                    </label>
+                                    <span class="type">
+                                صلاح الدين الأيوبي
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               الرمز البريدي
+                                    </label>
+                                    <span class="type">
+                                 19587
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                رقم المبنى
+                                    </label>
+                                    <span class="type">
+                                163
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                الرقم الإضافي
+                                    </label>
+                                    <span class="type">
+                               17
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                خط الطول
+                                    </label>
+                                    <span class="type">
+                                20.9844514
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                خط العرض
+                                    </label>
+                                    <span class="type">
+                               49.4645645
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                واجهة العقار
+                                    </label>
+                                    <span class="type">
+                                بحري
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               رقم المخطط
+                                    </label>
+                                    <span class="type">
+                                1010254781
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               الإلتزامات على العقار
+                                    </label>
+                                    <span class="type">
+                                لا يوجد
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                الضمانات ومدتها
+                                    </label>
+                                    <span class="type">
+                               وصف نصي للضمانات
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                حدود وأطوال العقار
+                                    </label>
+                                    <span class="type">
+                                وصف نصي لحدود وأطوال العقار
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               مطابقة كود البناء السعودي
+                                    </label>
+                                    <span class="type">
+                               1010254781
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                قنوات الإعلان
+                                    </label>
+                                    <span class="type">
+                                المسوق الإفتراضي
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                استخدام العقار
+                                    </label>
+                                    <span class="type">
+                               سكني
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                خدمات العقار
+                                    </label>
+                                    <span class="type">
+                               سكني
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               عدد الغرف
+                                    </label>
+                                    <span class="type">
+                                5
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                الصالات
+                                    </label>
+                                    <span class="type">
+                              4
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                                دورات المياه 
+                                    </label>
+                                    <span class="type">
+                                 3
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               المطابخ 
+                                    </label>
+                                    <span class="type">
+                                1
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               عدد المداخل
+                                    </label>
+                                    <span class="type">
+                                2
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               صور الإعلان 
+                                    </label>
+                                   <ul class="adv-pic">
+                                    <li>
+                                       <img class="adv-picc" src="images/buildings/011.jpg" alt="building">
+                                    </li>
+                                    <li>
+                                       <img class="adv-picc" src="images/buildings/011.jpg" alt="building">
+                                    </li>
+                                    <li>
+                                       <img class="adv-picc" src="images/buildings/011.jpg" alt="building">
+                                    </li>
+                                    <li>
+                                       <img class="adv-picc" src="images/buildings/011.jpg" alt="building">
+                                    </li>
+                                   </ul>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                               عدد المداخل
+                                    </label>
+                                    <span class="type">
+                               هناك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم 
+                               ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر 
+                               أو الكلمات العشوائية إلى النص إن كنت تريد استخدام لوريم إيبسوم ما
+                                    </span>
+                                 </div>
+                                 <div class="my-acc-form-block width100">
+                                    <label class="order-label w263">
+                              الملحقات
+                                    </label>
+                                    <span class="type">
+                             درج داخلي , غرفة خادمة
+                                    </span>
+                                 </div>
+
                                 
-                              </div>
-                           </a>
-                           <a href="order-details.html" class="order-block">
-                              <div class="notification-block ">
-                                 <div class="my-acc-form-block width100">
-                                    <label class="order-label">
-                                   رقم الطلب
-                                    </label>
-                                    <span class="type">
-                                    #123
-                                    </span>
-                                 </div>
-                                 <div class="my-acc-form-block width100">
-                                    <label class="order-label">
-                                  نوع الطلب
-                                    </label>
-                                    <span class="type">
-                                   إعلان مع إصدار ترخيص
-                                    </span>
-                                 </div>
-                                 <div class="my-acc-form-block width100">
-                                    <label class="order-label">
-                                   حالة الطلب
-                                    </label>
-                                    <span class="type">
-                                   قيد السداد
-                                    </span>
-                                 </div>
-                                
-                              </div>
-                           </a>
-                          
                         </div>
                      </div>
                   </div>
